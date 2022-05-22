@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*---------------*/
+
+header{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.foto1{
+    width: 20%;
+    padding: 0.5rem;
+}
+
+.foto2{
+    width: 100%;
+}
+
+/*---------------*/
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    display: inline-block;
+    padding: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.foto3{
+    width: 25%;
+    margin-left: 3%;
+}
+
+/*---------------*/
+
+.slider{
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+    height: 100%;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.slider li:first-of-type{
+    background: url(/static/img/exterior.jpeg); 
+    background-size: cover;
+    background-position: center center;
+}
+
+.slider li:nth-child(2){
+    background: url(/static/img/piscina1.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.slider li:nth-child(3){
+    background: url(/static/img/piscina.png);
+    background-size: cover;
+    background-position: center 35%;
+}
+
+.slider li:nth-child(4){
+    background: url(/static/img/vistas.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.slider img{
+    width: 100%;
+    height: 70%;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+/*---------------*/
+
+.section2{
+    width: 100%;
+    text-align: center;
+}
+
+.section2 h2{
+    width: 100%;
+    padding: 01rem;
+}
+
+.section2 p{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+/*---------------*/
+
+
+
+/*---------------*/
+
+footer{
+    background-color: darkblue;
+    margin-top: 3em;
+    color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div1{
+    width:60%;
+    text-align: center;
+
+}
+
+.div2{
+    width: 40%;
+    text-align: center;
+}
+
+.gestion{
+    width: 7%;
+}
