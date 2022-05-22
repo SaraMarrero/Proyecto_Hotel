@@ -125,12 +125,98 @@ a{
 .section2 p{
     width: 90%;
     margin: 0 auto;
-    
 }
 
 /*---------------*/
 
+.section3{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
 
+.div_grande{
+    width: 50%;
+}
+
+.h1{
+    padding: 0.5rem
+}
+
+.a{
+    color: blue;
+}
+
+.div1{
+    text-align: center;
+    width: 100%;
+
+}
+
+.div2{
+    width: 50%;
+}
+
+.certificados{
+    width: 50%;
+}
+
+strong{
+    color: purple;
+}
+
+p{
+    padding: 0.5rem;
+}
+
+.contenido{
+    background-color:rgb(236, 243, 252);
+    width:30%;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+}
+
+.subventana1{
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity:0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+#subventana:target{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+/*---------------*/
+
+.section4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 94%;
+    margin-top: 3em;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.section4 > table{
+    width: 47%;
+    background-color: rgb(236, 243, 252);
+}
+
+iframe{
+    width: 47%;
+}
 
 /*---------------*/
 
@@ -146,13 +232,13 @@ footer{
     justify-content: space-between;
 }
 
-.div1{
+.footer1{
     width:60%;
     text-align: center;
 
 }
 
-.div2{
+.footer2{
     width: 40%;
     text-align: center;
 }
