@@ -32,7 +32,7 @@ nav {
     justify-content: space-between;
 }
 
-li{
+.menu{
     display: inline-block;
     padding: 1.5rem;
 }
@@ -183,11 +183,12 @@ a{
     width: 50%;
 }
 
-strong{
-    color: purple;
+span{
+    color: rgb(227, 24, 227);
 }
 
-p{
+.premios{
+    list-style-type: none;
     padding: 0.5rem;
 }
 
