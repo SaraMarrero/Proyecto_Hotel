@@ -17,6 +17,8 @@ header{
     padding: 0.5rem;
 }
 
+/*---------------*/
+
 .foto2{
     width: 100%;
 }
@@ -91,11 +93,6 @@ a{
     background-position: center center;
 }
 
-.slider img{
-    width: 100%;
-    height: 70%;
-}
-
 @keyframes cambio{
     0%{margin-left: 0;}
     20%{margin-left: 0;}
@@ -108,6 +105,21 @@ a{
 
     75%{margin-left: -300%;}
     100%{margin-left: -300%;}
+}
+
+/*---------------*/
+
+.section-flechas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flechas{
+    width: 7%;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 
 /*---------------*/
@@ -153,7 +165,6 @@ a{
 .div1{
     text-align: center;
     width: 100%;
-
 }
 
 .div2{
@@ -200,6 +211,22 @@ p{
 /*---------------*/
 
 .section4{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+    justify-content: center;
+}
+
+.img{
+    width: 12.5%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+/*---------------*/
+
+.section5{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -209,7 +236,7 @@ p{
     margin-right: 3%;
 }
 
-.section4 > table{
+.section5 > table{
     width: 47%;
     background-color: rgb(236, 243, 252);
 }
