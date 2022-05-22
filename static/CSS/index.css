@@ -114,6 +114,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 1em;
 }
 
 .flechas{
@@ -127,16 +128,23 @@ a{
 .section2{
     width: 100%;
     text-align: center;
+    margin-top: 2em;
 }
 
 .section2 h2{
     width: 100%;
-    padding: 01rem;
+    padding: 1rem;
+    margin-bottom: 1.5em;
 }
 
 .section2 p{
     width: 90%;
     margin: 0 auto;
+}
+
+.h2{
+    box-shadow: 1px 1px 15px 15px lightskyblue;
+    background-color: whitesmoke;
 }
 
 /*---------------*/
