@@ -168,6 +168,7 @@ a{
 
 .a{
     color: blue;
+    margin-bottom: 1em;
 }
 
 .div1{
@@ -246,6 +247,7 @@ span{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .article1{
@@ -253,19 +255,17 @@ span{
     margin-top: 2em;
 }
 
-.article1 > h1, .p{
+.article1 > h1{
     padding: 0.5rem;
     width: 60%;
     text-align: center;
     margin: 0 auto;
-    font-size: 140%;
-    margin-top: 0.5em;
 }
 
 .article1 > .p{
     color: grey;
-    margin-bottom: 0.5em;
-    font-size: 110%;
+    width: 60%; 
+    margin: 0 auto;
 }
 
 .article1 > a > button{
@@ -274,6 +274,8 @@ span{
     height: 10%;
     position: relative;
     left: 40%;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .article2{
