@@ -6,7 +6,6 @@
 
 /*---------------*/
 
-
 header{
     display: flex;
     justify-content: center;
@@ -41,6 +40,10 @@ nav {
 a{
     text-decoration: none;
     color: black;
+}
+
+.ul-menu .menu a:hover{
+    background-color: lightskyblue;
 }
 
 .foto3{
@@ -111,56 +114,52 @@ a{
 /*---------------*/
 
 .section-flechas{
+    background-color: aliceblue;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 1em;
+    justify-content: space-evenly;
 }
 
 .flechas{
     width: 7%;
     margin-left: 1.5em;
     margin-right: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
 /*---------------*/
 
 .section2{
+    background-color: aliceblue;
     width: 100%;
     text-align: center;
-    margin-top: 2em;
 }
 
 .section2 h2{
     width: 100%;
     padding: 1rem;
     margin-bottom: 1.5em;
+    box-shadow: 1px 1px 15px 15px lightskyblue;
+    background-color: whitesmoke;
 }
 
 .section2 p{
     width: 90%;
     margin: 0 auto;
-}
-
-.h2{
-    box-shadow: 1px 1px 15px 15px lightskyblue;
-    background-color: whitesmoke;
+    padding-bottom: 2rem;
 }
 
 /*---------------*/
 
 .section3{
+    background-color: rgb(239, 239, 239);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
-}
-
-.div_grande{
-    width: 50%;
 }
 
 .h1{
@@ -173,15 +172,19 @@ a{
 
 .div1{
     text-align: center;
-    width: 100%;
+    width: 40%;
+    margin-left: 10%;
 }
 
 .div2{
-    width: 50%;
+    width: 40%;
+    text-align: center;
+    margin-right: 10%;
 }
 
 .certificados{
     width: 50%;
+    padding: 0.5rem;
 }
 
 span{
@@ -194,7 +197,7 @@ span{
 }
 
 .contenido{
-    background-color:rgb(236, 243, 252);
+    background-color:rgb(214, 220, 228);
     width:30%;
     padding: 10px 20px;
     margin: 20% auto;
@@ -221,10 +224,10 @@ span{
 /*---------------*/
 
 .section4{
+    background-color: aliceblue;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1.5em;
     justify-content: center;
 }
 
@@ -232,31 +235,37 @@ span{
     width: 10%;
     border-top: 1px solid;
     border-bottom: 1px solid;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 /*---------------*/
 
 .section5{
+    background-color: rgb(239, 239, 239);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2em;
 }
 
 .article1{
     width: 50%;
+    margin-top: 2em;
 }
 
-.article1 > h1, p{
+.article1 > h1, .p{
     padding: 0.5rem;
     width: 60%;
     text-align: center;
     margin: 0 auto;
+    font-size: 140%;
+    margin-top: 0.5em;
 }
 
-.article1 > p{
+.article1 > .p{
     color: grey;
     margin-bottom: 0.5em;
+    font-size: 110%;
 }
 
 .article1 > a > button{
@@ -269,38 +278,45 @@ span{
 
 .article2{
     width: 50%; 
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .img-piscina{
     width: 70%;
+    border-radius: 10px;
 }
 
 /*---------------*/
 
 .section7{
+    background-color: aliceblue;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 94%;
-    margin-top: 3em;
-    margin-left: 3%;
-    margin-right: 3%;
+    width: 100%;
 }
 
 .section7 > table{
-    width: 47%;
-    background-color: rgb(236, 243, 252);
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    background-color: rgb(239, 239, 239);
 }
 
+
 iframe{
-    width: 47%;
+    width: 40%;
+    margin-right: 10%;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 /*---------------*/
 
 footer{
     background-color: darkblue;
-    margin-top: 3em;
     color: white;
     height: 50px;
     width: 100%;
@@ -323,4 +339,8 @@ footer{
 
 .gestion{
     width: 7%;
+}
+
+.login{
+    width: 13%;
 }
