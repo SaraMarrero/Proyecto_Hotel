@@ -6,6 +6,7 @@
 
 /*---------------*/
 
+
 header{
     display: flex;
     justify-content: center;
@@ -228,7 +229,7 @@ span{
 }
 
 .img{
-    width: 12.5%;
+    width: 10%;
     border-top: 1px solid;
     border-bottom: 1px solid;
 }
@@ -236,6 +237,47 @@ span{
 /*---------------*/
 
 .section5{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.article1{
+    width: 50%;
+}
+
+.article1 > h1, p{
+    padding: 0.5rem;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.article1 > p{
+    color: grey;
+    margin-bottom: 0.5em;
+}
+
+.article1 > a > button{
+    background-color: lightblue;
+    width: 20%;
+    height: 10%;
+    position: relative;
+    left: 40%;
+}
+
+.article2{
+    width: 50%; 
+}
+
+.img-piscina{
+    width: 70%;
+}
+
+/*---------------*/
+
+.section7{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -245,7 +287,7 @@ span{
     margin-right: 3%;
 }
 
-.section5 > table{
+.section7 > table{
     width: 47%;
     background-color: rgb(236, 243, 252);
 }
