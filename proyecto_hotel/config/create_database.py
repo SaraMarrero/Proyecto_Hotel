@@ -51,6 +51,9 @@ def create_database(db_file):
     con.execute("INSERT INTO reservas_servicios VALUES (1,2), (2,4), (3,3), (4,4), (5,1), (6,3), (7,5), (8,2), (9,4), (10,5)")
 
 
+
+    # Meter la foreign key directamente donde creamos la tabla, probar primero metiendo los execute
+
     "alter table recepcionista_cliente_reservas add foreign key (id_recepcionista) references recepcionista(id_recepcionista)"
     "alter table recepcionista_cliente_reservas add foreign key (dni_cliente) references cliente(dni)"
     "alter table recepcionista_cliente_reservas add foreign key (id_reserva) references reservas(id_reserva)"

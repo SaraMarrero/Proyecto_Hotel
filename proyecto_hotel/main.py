@@ -1,9 +1,10 @@
 import sqlite3
 from bottle import *
-from proyecto_hotel.config.config import DATABASE
+from config.config import DATABASE
 
 
-@route('\datos')
+
+@get('/datos')
 def datos_list():
     conexion = sqlite3.connect(DATABASE)
     c = conexion.cursor()
