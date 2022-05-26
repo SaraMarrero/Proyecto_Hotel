@@ -53,6 +53,136 @@ a{
 
 /*---------------*/
 
+.section1{
+    width: 100%;
+}
+
+.section1 > h1{
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 1em;
+    box-shadow: 1px 1px 15px 15px lightskyblue;
+    background-color: whitesmoke;
+}
+
+.article1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+.article1 > h2{
+    width: 50%;
+    margin-top: 2em;
+    text-align: center;
+    font-size: 1.8vw;
+}
+
+.article1 > p{
+    width: 45%;
+    margin-top: 2em;
+    margin-right: 5%;
+    margin-bottom: 2em;
+    font-size: 1.2vw;
+}
+
+/*---------------*/
+
+.container{
+	display: flex;
+	overflow: auto;
+	scroll-snap-type: x mandatory;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.container .item{
+    min-width: 100%;
+	scroll-snap-align: start;
+    list-style-type: none;
+    width: 50%;
+    height: 30vw;
+    border-radius: 10px;
+}
+
+.container li:first-of-type{
+    background: url(/static/img/hotel.png); 
+    background-size: cover;
+    background-position: center center;
+}
+
+.container li:nth-child(2){
+    background: url(/static/img/hotel1.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container li:nth-child(3){
+    background: url(/static/img/hotel2.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container li:nth-child(4){
+    background: url(/static/img/hotel3.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container li:nth-child(5){
+    background: url(/static/img/hotel5.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container li:nth-child(6){
+    background: url(/static/img/hotel6.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container li:nth-child(7){
+    background: url(/static/img/hotel7.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container li:nth-child(8){
+    background: url(/static/img/hotel8.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container li:nth-child(9){
+    background: url(/static/img/hotel9.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container li:nth-child(10){
+    background: url(/static/img/hotel10.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container li:nth-child(11){
+    background: url(/static/img/hote11.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container li:nth-child(12){
+    background: url(/static/img/hotel12.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.container li:nth-child(13){
+    background: url(/static/img/hotel13.png);
+    background-size: cover;
+    background-position: center center;
+}
 
 /*---------------*/
 
