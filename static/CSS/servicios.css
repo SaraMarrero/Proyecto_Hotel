@@ -6,11 +6,17 @@
 
 /*---------------*/
 
+body{
+    font-size: 1.2vw;
+}
+
+/*---------------*/
+
 header{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
 }
 
 .foto1{
@@ -22,6 +28,10 @@ header{
 
 .foto2{
     width: 100%;
+}
+
+.foto_header{
+    background-color: aliceblue;
 }
 
 /*---------------*/
@@ -95,9 +105,21 @@ label {
     filter: brightness(110%);
 }
 
+.li2:hover {
+    filter: brightness(110%);
+}
+
 .li2{
     display: inline;
     margin: 50px 10px;
+}
+
+.boton{
+    margin-left: 1em;
+}
+
+.nav2{
+    margin-right: 1em;
 }
 
 /*---------------*/
@@ -234,7 +256,9 @@ footer{
     width: 13%;
 }
 
+/*---------------*/
 /*IMAGENES ANIMADAS*/
+/*---------------*/
 
 .card {
     position: relative;

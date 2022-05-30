@@ -6,6 +6,12 @@
 
 /*---------------*/
 
+body{
+    font-size: 1.2vw;
+}
+
+/*---------------*/
+
 header{
     display: flex;
     justify-content: center;
@@ -22,6 +28,10 @@ header{
 
 .foto2{
     width: 100%;
+}
+
+.foto_header{
+    background-color: aliceblue;
 }
 
 /*---------------*/
@@ -95,9 +105,21 @@ label {
     filter: brightness(110%);
 }
 
+.li2:hover {
+    filter: brightness(110%);
+}
+
 .li2{
     display: inline;
     margin: 50px 10px;
+}
+
+.boton{
+    margin-left: 1em;
+}
+
+.nav2{
+    margin-right: 1em;
 }
 
 /*---------------*/
@@ -141,6 +163,7 @@ label {
 .section2{
     width: 100%;
     background-color: rgb(239, 239, 239);
+    border: 1px solid;
 }
 
 .section2 h2{
@@ -274,6 +297,7 @@ label {
 
 .grid{
     width: 100%;
+    
 }
 
 .div-grid{
@@ -283,7 +307,9 @@ label {
     align-items: center;
     grid-template-columns: repeat(3, 33.333333333333333%);
     grid-template-rows: repeat(3, 33.333333333333333%);
-    background-color: aliceblue;
+    background: url(/static/img/fondo.png);
+    background-position: center center;
+    color: white;
 }
 
 .div-grid h1{
