@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------------*/
+
+body{
+    background-color: aliceblue;
+    background: url(/fondo.png);
+}
+
+.section1{
+    width: 100%;
+    text-align: center;
+}
+
+.section1 h1{
+    margin-bottom: 3rem;
+    box-shadow: 1px 1px 15px 15px white;
+    margin-top: 1.5rem;
+}
+
+/*---------------*/ 
+
+table{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    box-shadow: 1px 1px 15px 15px white;
+}
+
+table, tr td{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+h3{
+    text-align: center;
+    padding: 1em;
+}
+
+.titulo{
+    text-align: center;
+    padding: 1em;
+    background-color: grey;
+}
+
+label, input, select, textarea{
+    margin-left: 1rem;
+    margin: 0.5em;
+}
+
+.td{
+    padding: 0.5em;
+    background: rgb(239, 239, 239);
+}
+
+.td1{
+    padding: 0.5em;
+    text-align: center;
+    background: rgb(239, 239, 239);
+}
+
+span{
+    color: red;
+    font-size: 1vw;
+}
+
+
+textarea{
+    resize: none;
+}

@@ -1,348 +1,883 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@media (min-width: 320px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*---------------*/
+
+    body{
+        font-size: 1.2vw;
+    }
+
+    /*---------------*/
+
+    header{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: aliceblue;
+    }
+
+    .foto1{
+        width: 50%;
+        padding: 0.5rem;
+    }
+
+    /*---------------*/
+
+    .foto2{
+        width: 100%;
+    }
+
+    .foto_header{
+        background-color: aliceblue;
+    }
+
+    /*---------------*/
+
+    .foto3{
+        width: 23%;
+    } 
+
+    nav{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .url{
+        text-decoration: none;
+        color: black;
+    }
+
+    input:checked  ~ .ul1{
+        display: block;
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        display: block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 20px;
+        line-height: 20px;
+        font-weight: bold;
+        text-align: center;
+        background-color: white;
+        margin-bottom: 1em;
+    }
+
+    .ul1{
+        margin-top: 0;
+        padding: 0;
+        display: none;
+        position: absolute;
+    }
+
+    .li_menu{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+    }
+
+    .li_menu1{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+        margin-bottom: 2em;
+    }
+
+    /*Estilo cuando el mouse pasa encima de cada link del menu*/
+    .li_menu:hover {
+        filter: brightness(110%);
+    }
+
+    .li2:hover {
+        filter: brightness(110%);
+    }
+
+    .li2{
+        display: inline;
+        margin: 50px 10px;
+    }
+
+    .boton{
+        margin-left: 1em;
+    }
+
+    .nav2{
+        margin-right: 5em;
+    }
+
+    /*---------------*/
+
+    .slider{
+        width: 100%;
+        height: 30rem;
+        overflow: hidden;
+    }
+
+    .slider ul{
+        display: flex;
+        animation: cambio 20s infinite alternate linear;
+        width: 400%;
+        height: 100%;
+    }
+
+    .slider li{
+        width: 100%;
+        list-style: none;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .slider li:first-of-type{
+        background: url(/static/img/exterior.jpeg); 
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .slider li:nth-child(2){
+        background: url(/static/img/piscina1.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .slider li:nth-child(3){
+        background: url(/static/img/piscina.png);
+        background-size: cover;
+        background-position: center 35%;
+    }
+
+    .slider li:nth-child(4){
+        background: url(/static/img/vistas.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    @keyframes cambio{
+        0%{margin-left: 0;}
+        20%{margin-left: 0;}
+
+        25%{margin-left: -100%;}
+        45%{margin-left: -100%;}
+
+        50%{margin-left: -200%;}
+        70%{margin-left: -200%;}
+
+        75%{margin-left: -300%;}
+        100%{margin-left: -300%;}
+    }
+
+    /*---------------*/
+
+    .section-flechas{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .flechas{
+        width: 7%;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+    /*---------------*/
+
+    .section2{
+        background-color: aliceblue;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section2 h2{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1.5em;
+        box-shadow: 1px 1px 15px 15px lightskyblue;
+        background-color: whitesmoke;
+    }
+
+    .section2 p{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    /*---------------*/
+
+    .section3{
+        background-color: rgb(239, 239, 239);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+    }
+
+    .h1{
+        padding: 0.5rem
+    }
+
+    .a{
+        color: blue;
+        margin-bottom: 1em;
+    }
+
+    .div1{
+        text-align: center;
+        width: 40%;
+        margin-left: 10%;
+    }
+
+    .div2{
+        width: 40%;
+        text-align: center;
+        margin-right: 10%;
+    }
+
+    .certificados{
+        width: 50%;
+        padding: 0.5rem;
+    }
+
+    span{
+        color: rgb(227, 24, 227);
+    }
+
+    .premios{
+        list-style-type: none;
+        padding: 0.5rem;
+    }
+
+    .contenido{
+        background-color:rgb(214, 220, 228);
+        width:30%;
+        padding: 10px 20px;
+        margin: 20% auto;
+        position: relative;
+    }
+
+    .subventana1{
+        background-color: rgba(0,0,0,.8);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity:0;
+        pointer-events: none;
+        transition: all 1s;
+    }
+
+    #subventana:target{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /*---------------*/
+
+    .section4{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img{
+        width: 10%;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    /*---------------*/
+
+    .section5{
+        background-color: rgb(239, 239, 239);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border: 1px solid;
+    }
+
+    .article1{
+        width: 50%;
+        margin-top: 2em;
+    }
+
+    .article1 > h1{
+        padding: 0.5rem;
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .article1 > .p{
+        color: grey;
+        width: 60%; 
+        margin: 0 auto;
+    }
+
+    .article1 > a > button{
+        background-color: lightblue;
+        width: 20%;
+        height: 10%;
+        position: relative;
+        left: 40%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .article2{
+        width: 50%; 
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .img-piscina{
+        width: 70%;
+        border-radius: 10px;
+    }
+
+    /*---------------*/
+
+    .section7{
+        background-color: aliceblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .section7 > table{
+        width: 40%;
+        margin-left: 10%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        background-color: rgb(239, 239, 239);
+    }
+
+
+    iframe{
+        width: 40%;
+        margin-right: 10%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    /*---------------*/
+
+    footer{
+        background-color: rgb(17, 132, 255);
+        color: white;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer1{
+        width:60%;
+        text-align: center;
+
+    }
+
+    .footer2{
+        width: 40%;
+        text-align: center;
+    }
+
+    .gestion{
+        width: 7%;
+    }
+
+    .login{
+        width: 13%;
+    }
+
+
 }
 
-/*---------------*/
 
-header{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+/*-------------------------------------------------------------------------------------*/
 
-.foto1{
-    width: 20%;
-    padding: 0.5rem;
-}
+@media(min-width: 768) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-/*---------------*/
+    /*---------------*/
 
-.foto2{
-    width: 100%;
-}
+    body{
+        font-size: 1.2vw;
+    }
 
-/*---------------*/
+    /*---------------*/
 
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.menu{
-    display: inline-block;
-    padding: 1.5rem;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-.ul-menu .menu a:hover{
-    background-color: lightskyblue;
-}
-
-.foto3{
-    width: 25%;
-    margin-left: 3%;
-}
-
-/*---------------*/
-
-.slider{
-    width: 100%;
-    height: 30rem;
-    overflow: hidden;
-}
-
-.slider ul{
-    display: flex;
-    animation: cambio 20s infinite alternate linear;
-    width: 400%;
-    height: 100%;
-}
-
-.slider li{
-    width: 100%;
-    list-style: none;
-    height: 100%;
-    background-repeat: no-repeat;
-}
-
-.slider li:first-of-type{
-    background: url(/static/img/exterior.jpeg); 
-    background-size: cover;
-    background-position: center center;
-}
-
-.slider li:nth-child(2){
-    background: url(/static/img/piscina1.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-.slider li:nth-child(3){
-    background: url(/static/img/piscina.png);
-    background-size: cover;
-    background-position: center 35%;
-}
-
-.slider li:nth-child(4){
-    background: url(/static/img/vistas.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-@keyframes cambio{
-    0%{margin-left: 0;}
-    20%{margin-left: 0;}
-
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
-}
-
-/*---------------*/
-
-.section-flechas{
-    background-color: aliceblue;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.flechas{
-    width: 7%;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
-
-/*---------------*/
-
-.section2{
-    background-color: aliceblue;
-    width: 100%;
-    text-align: center;
-}
-
-.section2 h2{
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1.5em;
-    box-shadow: 1px 1px 15px 15px lightskyblue;
-    background-color: whitesmoke;
-}
-
-.section2 p{
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-}
-
-/*---------------*/
-
-.section3{
-    background-color: rgb(239, 239, 239);
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.h1{
-    padding: 0.5rem
-}
-
-.a{
-    color: blue;
-    margin-bottom: 1em;
-}
-
-.div1{
-    text-align: center;
-    width: 40%;
-    margin-left: 10%;
-}
-
-.div2{
-    width: 40%;
-    text-align: center;
-    margin-right: 10%;
-}
-
-.certificados{
-    width: 50%;
-    padding: 0.5rem;
-}
-
-span{
-    color: rgb(227, 24, 227);
-}
-
-.premios{
-    list-style-type: none;
-    padding: 0.5rem;
-}
-
-.contenido{
-    background-color:rgb(214, 220, 228);
-    width:30%;
-    padding: 10px 20px;
-    margin: 20% auto;
-    position: relative;
-}
-
-.subventana1{
-    background-color: rgba(0,0,0,.8);
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity:0;
-    pointer-events: none;
-    transition: all 1s;
-}
-
-#subventana:target{
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-/*---------------*/
-
-.section4{
-    background-color: aliceblue;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.img{
-    width: 10%;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-/*---------------*/
-
-.section5{
-    background-color: rgb(239, 239, 239);
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.article1{
-    width: 50%;
-    margin-top: 2em;
-}
-
-.article1 > h1{
-    padding: 0.5rem;
-    width: 60%;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.article1 > .p{
-    color: grey;
-    width: 60%; 
-    margin: 0 auto;
-}
-
-.article1 > a > button{
-    background-color: lightblue;
-    width: 20%;
-    height: 10%;
-    position: relative;
-    left: 40%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.article2{
-    width: 50%; 
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-.img-piscina{
-    width: 70%;
-    border-radius: 10px;
-}
-
-/*---------------*/
-
-.section7{
-    background-color: aliceblue;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-}
-
-.section7 > table{
-    width: 40%;
-    margin-left: 10%;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    background-color: rgb(239, 239, 239);
-}
-
-
-iframe{
-    width: 40%;
-    margin-right: 10%;
-    margin-top: 3em;
-    margin-bottom: 3em;
-}
-
-/*---------------*/
-
-footer{
-    background-color: rgb(17, 132, 255);
-    color: white;
-    height: 50px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer1{
-    width:60%;
-    text-align: center;
+    header{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: aliceblue;
+    }
 
 }
 
-.footer2{
-    width: 40%;
-    text-align: center;
-}
 
-.gestion{
-    width: 7%;
-}
+      /*-----------------------------------------------------------*/
 
-.login{
-    width: 13%;
+
+@media(min-width: 1024px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*---------------*/
+
+    body{
+        font-size: 1.2vw;
+    }
+
+    /*---------------*/
+
+    header{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: aliceblue;
+    }
+
+    .foto1{
+        width: 20%;
+        padding: 0.5rem;
+    }
+
+    /*---------------*/
+
+    .foto2{
+        width: 100%;
+    }
+
+    .foto_header{
+        background-color: aliceblue;
+    }
+
+    /*---------------*/
+
+    .foto3{
+        width: 25%;
+    } 
+
+    nav{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+
+    .url{
+        text-decoration: none;
+        color: black;
+    }
+
+    input:checked  ~ .ul1{
+        display: block;
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        display: block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        background-color: white;
+        margin-bottom: 1em;
+    }
+
+    .ul1{
+        margin-top:0;
+        padding: 0;
+        display: none;
+        position: absolute;
+    }
+
+    .li_menu{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+    }
+
+    .li_menu1{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+        margin-bottom: 2em;
+    }
+
+    /*Estilo cuando el mouse pasa encima de cada link del menu*/
+    .li_menu:hover {
+        filter: brightness(110%);
+    }
+
+    .li2:hover {
+        filter: brightness(110%);
+    }
+
+    .li2{
+        display: inline;
+        margin: 50px 10px;
+    }
+
+    .boton{
+        margin-left: 1em;
+    }
+
+    .nav2{
+        margin-right: 1em;
+    }
+
+    /*---------------*/
+
+    .slider{
+        width: 100%;
+        height: 30rem;
+        overflow: hidden;
+    }
+
+    .slider ul{
+        display: flex;
+        animation: cambio 20s infinite alternate linear;
+        width: 400%;
+        height: 100%;
+    }
+
+    .slider li{
+        width: 100%;
+        list-style: none;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .slider li:first-of-type{
+        background: url(/static/img/exterior.jpeg); 
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .slider li:nth-child(2){
+        background: url(/static/img/piscina1.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .slider li:nth-child(3){
+        background: url(/static/img/piscina.png);
+        background-size: cover;
+        background-position: center 35%;
+    }
+
+    .slider li:nth-child(4){
+        background: url(/static/img/vistas.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    @keyframes cambio{
+        0%{margin-left: 0;}
+        20%{margin-left: 0;}
+
+        25%{margin-left: -100%;}
+        45%{margin-left: -100%;}
+
+        50%{margin-left: -200%;}
+        70%{margin-left: -200%;}
+
+        75%{margin-left: -300%;}
+        100%{margin-left: -300%;}
+    }
+
+    /*---------------*/
+
+    .section-flechas{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .flechas{
+        width: 7%;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+    /*---------------*/
+
+    .section2{
+        background-color: aliceblue;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section2 h2{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1.5em;
+        box-shadow: 1px 1px 15px 15px lightskyblue;
+        background-color: whitesmoke;
+    }
+
+    .section2 p{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    /*---------------*/
+
+    .section3{
+        background-color: rgb(239, 239, 239);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+    }
+
+    .h1{
+        padding: 0.5rem
+    }
+
+    .a{
+        color: blue;
+        margin-bottom: 1em;
+    }
+
+    .div1{
+        text-align: center;
+        width: 40%;
+        margin-left: 10%;
+    }
+
+    .div2{
+        width: 40%;
+        text-align: center;
+        margin-right: 10%;
+    }
+
+    .certificados{
+        width: 50%;
+        padding: 0.5rem;
+    }
+
+    span{
+        color: rgb(227, 24, 227);
+    }
+
+    .premios{
+        list-style-type: none;
+        padding: 0.5rem;
+    }
+
+    .contenido{
+        background-color:rgb(214, 220, 228);
+        width:30%;
+        padding: 10px 20px;
+        margin: 20% auto;
+        position: relative;
+    }
+
+    .subventana1{
+        background-color: rgba(0,0,0,.8);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity:0;
+        pointer-events: none;
+        transition: all 1s;
+    }
+
+    #subventana:target{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /*---------------*/
+
+    .section4{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img{
+        width: 10%;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    /*---------------*/
+
+    .section5{
+        background-color: rgb(239, 239, 239);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border: 1px solid;
+    }
+
+    .article1{
+        width: 50%;
+        margin-top: 2em;
+    }
+
+    .article1 > h1{
+        padding: 0.5rem;
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .article1 > .p{
+        color: grey;
+        width: 60%; 
+        margin: 0 auto;
+    }
+
+    .article1 > a > button{
+        background-color: lightblue;
+        width: 20%;
+        height: 10%;
+        position: relative;
+        left: 40%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .article2{
+        width: 50%; 
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .img-piscina{
+        width: 70%;
+        border-radius: 10px;
+    }
+
+    /*---------------*/
+
+    .section7{
+        background-color: aliceblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .section7 > table{
+        width: 40%;
+        margin-left: 10%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        background-color: rgb(239, 239, 239);
+    }
+
+
+    iframe{
+        width: 40%;
+        margin-right: 10%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    /*---------------*/
+
+    footer{
+        background-color: rgb(17, 132, 255);
+        color: white;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer1{
+        width:60%;
+        text-align: center;
+
+    }
+
+    .footer2{
+        width: 40%;
+        text-align: center;
+    }
+
+    .gestion{
+        width: 7%;
+    }
+
+    .login{
+        width: 13%;
+    }
 }

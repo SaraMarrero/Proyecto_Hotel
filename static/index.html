@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/CSS/index.css">
-    <link rel="shorcut icon" href="/static/img/gestion.png">
+    <link rel="shorcut icon" href="/static/img/gestion.png">   
     <title>Premium hotel</title>
 </head>
 <body>
@@ -14,20 +14,28 @@
       <img src="/static/img/logo1.png" class="foto1" alt="Imagen">
     </header>
 
-    <div>
+    <div class="foto_header">
       <img src="/static/img/linea.png" class="foto2" alt="Imagen">
     </div>
    
     <nav>
-      <img src="/static/img/logo2.png" class="foto3" alt="Imagen">
-          <ul class="ul-menu">
-            <li class="menu"><a href="/static/index.html">Inicio</a></li>
-            <li class="menu"><a href="#">Quienes somos</a></li>
-            <li class="menu"><a href="#">Servicios</a></li>
-            <li class="menu"><a href="#">Promociones</a></li>
-            <li class="menu"><a href="#">Habitaciones</a></li>
-            <li class="menu"><a href="#">Reserva</a></li>
-          </ul>
+      <div class="boton">
+        <input type="checkbox" id="menu">
+        <label for="menu"> ☰ </label>
+        <ul class="ul1">
+          <li class="li_menu"><a href="/static/index.html" class="url">Inicio</a></li>
+          <li class="li_menu"><a href="/static/Html/quienessomos.html" class="url">Quienes somos</a></li>
+          <li class="li_menu"><a href="/static/Html/servicios.html" class="url">Servicios</a></li>
+          <li class="li_menu"><a href="/static/Html/habitaciones.html" class="url">Habitaciones</a></li>
+        </ul>
+      </div>
+
+      <div class="nav2">
+        <ul>
+          <li class="li2">Check-in</li>
+          <li class="li2">Mi reserva</li>
+        </ul>
+      </div>
     </nav>
 
     <main>
@@ -107,8 +115,8 @@
       <section class="section5">
         <article class="article1">
           <h1>Un mundo de posibilidades de descanse, ocio y bienestar</h1>
-          <p class="p">Un alojamiento ideal ubicado cerca de la playa para unos días inovidables con toda la familia o en pareja. Disfruta de nuestra magnífica piscina, instalaciones y un completo spa con jacuzzi, sauna y baño tauro.</p>  
-          <a href="#">
+          <p class="p">Un alojamiento ideal ubicado cerca de la playa para unos días inovidables con toda la familia o en pareja. Disfruta de nuestra magnífica piscina, instalaciones y un completo spa con jacuzzi, sauna y baño turco.</p>  
+          <a href="/static/Html/quienessomos.html">
             <button>Saber más...</button>
           </a>
         </article>
@@ -173,7 +181,7 @@
             <a href="http://www.gobiernodecanarias.org/turismo/dir_gral_ordenacion_promocion/alojamiento/index.html"><img src="/static/img/gestion.png" alt="Imagen" class="gestion"></a>
             <a href=""><img src="/static/img/loginad.png" class="login" alt="Imagen"></a>
         </div> 
-    </footer>
+      </footer>
     </main>
   </div>
 </body>
