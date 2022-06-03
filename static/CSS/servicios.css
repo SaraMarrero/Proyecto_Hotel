@@ -46,6 +46,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    z-index:1;
 }
 
 .url{
@@ -272,7 +273,7 @@ footer{
     background: url('/static/img/limpieza.jpeg') center no-repeat;
     background-size: cover;
     border-radius: 20px;
-    z-index: 1;
+    z-index: 2;
     overflow: hidden;
 }
 
