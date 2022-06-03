@@ -171,8 +171,3 @@ on recepcionista.id_recepcionista = recepcionista_cliente_reservas.dni_cliente;
 +--------+-----------+-----------+-------------+
 
 ------
-/* 1 procedimiento / función almacenado */
-1.
-
-------
-/* 1 trigger */
