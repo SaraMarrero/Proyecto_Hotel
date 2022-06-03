@@ -1,4 +1,4 @@
-#!/Users/saramarrero/Desktop/Proyecto/.venv/bin/python3
+#!/Users/saramarrero/Documents/GitHub/Proyecto_Hotel/.venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
