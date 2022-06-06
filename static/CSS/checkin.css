@@ -8,7 +8,7 @@
 
 body{
     background-color: aliceblue;
-    background: url(/fondo.png);
+    background: url(/static/img/fondo.png);
 }
 
 .section1{

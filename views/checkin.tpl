@@ -1,17 +1,18 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="chekin.css">
-    <title></title>
+    <link rel="stylesheet" href="/static/css/checkin.css">
+    <title>Check-in</title>
 </head>
 <body>
     <section class="section1">
         <h1>Premium Hotel</h1>
     </section>
 
-    <form method ="post">
+    <form action="/new" method ="post">
         <table>
             <tr>
                 <td colspan="2">
@@ -58,7 +59,7 @@
 
                 <td class="td">
                     <label for="Telefono">Teléfono<span>*</span></label><br>
-                    <input type="tel" name="Telefono" id="Telefono">
+                    <input type="int" name="Telefono" id="Telefono">
                 </td>
             </tr>
 
@@ -76,7 +77,7 @@
 
                 <td class="td">
                     <label for="fechasalida">Fecha de salida<span>*</span></label><br>
-                    <input type="date" id="fehcasalida" name="fechasalida" min="01-01-2022" required>
+                    <input type="date" id="fehcasalida" name="fechasalida" min="01-01-2022">
                 </td>
             </tr>
 
@@ -104,12 +105,8 @@
             </tr>
 
             <tr>
-                <td class="td1">
+                <td class="td1" colspan="2">
                     <input type="submit" value="Reservar">
-                </td>
-
-                <td class="td1">
-                    <input type="submit" value="Resetear campos">
                 </td>
             </tr>
         </table>
