@@ -1,387 +1,1203 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@media(min-width: 320px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    /*---------------*/
+
+    header{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: aliceblue;
+    }
+
+    .foto1{
+        width: 60%;
+        padding: 0.5rem;
+    }
+
+    /*---------------*/
+
+    .foto2{
+        width: 100%;
+    }
+
+    .foto_header{
+        background-color: aliceblue;
+    }
+
+    /*---------------*/
+
+    nav{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .url{
+        text-decoration: none;
+        color: black;
+    }
+
+    input:checked  ~ .ul1{
+        display: block;
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        display: block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        background-color: white;
+        margin-bottom: 1em;
+    }
+
+    .ul1{
+        margin-top:0;
+        padding: 0;
+        display: none;
+        position: absolute;
+    }
+
+    .li_menu{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+    }
+
+    .li_menu1{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+        margin-bottom: 2em;
+    }
+
+    /*Estilo cuando el mouse pasa encima de cada link del menu*/
+    .li_menu:hover {
+        filter: brightness(110%);
+    }
+
+    .li2:hover {
+        filter: brightness(110%);
+    }
+
+    .li2{
+        display: inline;
+        margin: 50px 10px;
+    }
+
+    .boton{
+        margin-left: 1em;
+    }
+
+    .nav2{
+        margin-right: 1em;
+        margin-bottom: 1em;
+    }
+
+    /*---------------*/
+
+    .section1{
+        width: 100%;
+        background: aliceblue;
+        margin-top: 1em;
+    }
+
+    .section1  h1{
+        font-size: 8vw;
+        text-align: center;
+        box-shadow: 1px 1px 15px 15px lightskyblue;
+        background-color: whitesmoke;
+    }
+
+    .article1{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .article1 > h2{
+        width: 100%;
+        margin-top: 2em;
+        text-align: center;
+        font-size: 5.5vw;
+    }
+
+    .article1 > p{
+        width: 100%;
+        margin-top: 1em;
+        margin: 1em;
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    /*---------------*/
+
+    .section2{
+        width: 100%;
+        background-color: rgb(239, 239, 239);
+        border: 1px solid;
+    }
+
+    .section2 h2{
+        width: 100%;
+        text-align: center;
+        margin-top: 0.3em;
+        margin-bottom: 0.5em;
+    }
+
+    .section2 article{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .section2 p{
+        margin: 0.7em 0;
+    }
+
+    .div-foto{
+        width: 0%;
+        text-align: center;
+    }
+
+    .flecha{
+        width: 100%;
+    }
+
+    .div-centro{
+        width: 100%;
+    }
+
+    .container{
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .container .item{
+        min-width: 100%;
+        scroll-snap-align: start;
+        list-style-type: none;
+        width: 100%;
+        height: 50vw;
+        border-radius: 10px;
+    }
+
+    .container li:first-of-type{
+        background: url(/static/img/hotel.png); 
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(2){
+        background: url(/static/img/hotel1.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(3){
+        background: url(/static/img/hotel2.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(4){
+        background: url(/static/img/hotel3.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(5){
+        background: url(/static/img/hotel5.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(6){
+        background: url(/static/img/hotel6.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(7){
+        background: url(/static/img/hotel7.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(8){
+        background: url(/static/img/hotel8.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(9){
+        background: url(/static/img/hotel9.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(10){
+        background: url(/static/img/hotel10.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(11){
+        background: url(/static/img/hotel11.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(12){
+        background: url(/static/img/hotel12.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(13){
+        background: url(/static/img/hotel13.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .p{
+        color: darkred;
+        text-align: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*---------------*/
+
+    .grid{
+        width: 100%; 
+    }
+
+    .div-grid{
+        width: 100%;
+        display: grid;
+        text-align: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 33.333333333333333%);
+        grid-template-rows: repeat(10, 16,5%);
+        background: url(/static/img/fondo.png);
+        background-position: center center;
+        background-size: 471vw;
+        color: white;
+    }
+
+    .div-grid h1{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        text-align: center;
+        font-size: 10vw;
+    }
+
+    .texto1{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        margin: 2em;
+    }
+
+    .texto2{
+        grid-column: 1/4;
+        grid-row: 3/4;
+        margin: 1em;
+    }
+
+    .texto3{
+        grid-column: 1/4;
+        grid-row: 4/5;
+        margin: 1em;
+    }
+
+    .texto4{
+        grid-column: 1/4;
+        grid-row: 5/6;
+        margin: 1em;
+    }
+
+    .texto5{
+        grid-column: 1/4;
+        grid-row: 6/7;
+        margin: 1em;
+    }
+
+    .texto6{
+        grid-column: 1/4;
+        grid-row: 7/8;
+        margin: 1em;
+    }
+
+    /*---------------*/
+
+    footer{
+        background-color: rgb(17, 132, 255);
+        color: white;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer1{
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer1 > p{
+        margin: 0.5em 4em;
+    }
+
+    .footer2{
+        width: 0%;
+        text-align: center;
+    }
+
+    .gestion{
+        width: 0%;
+    }
+
+    .login{
+        width: 0%;
+    }
 }
 
-/*---------------*/
 
-body{
-    font-size: 1.2vw;
+
+/*-------------------------------------------------------------------------------------*/
+
+
+@media(min-width: 768px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    /*---------------*/
+
+    header{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: aliceblue;
+    }
+
+    .foto1{
+        width: 30%;
+        padding: 0.5rem;
+    }
+
+    /*---------------*/
+
+    .foto2{
+        width: 100%;
+    }
+
+    .foto_header{
+        background-color: aliceblue;
+    }
+
+    /*---------------*/
+
+    nav{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .url{
+        text-decoration: none;
+        color: black;
+    }
+
+    input:checked  ~ .ul1{
+        display: block;
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        display: block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        background-color: white;
+        margin-bottom: 1em;
+    }
+
+    .ul1{
+        margin-top:0;
+        padding: 0;
+        display: none;
+        position: absolute;
+    }
+
+    .li_menu{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+    }
+
+    .li_menu1{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+        margin-bottom: 2em;
+    }
+
+    /*Estilo cuando el mouse pasa encima de cada link del menu*/
+    .li_menu:hover {
+        filter: brightness(110%);
+    }
+
+    .li2:hover {
+        filter: brightness(110%);
+    }
+
+    .li2{
+        display: inline;
+        margin: 50px 10px;
+        font-size: 2.5vw;
+    }
+
+    .boton{
+        margin-left: 1em;
+    }
+
+    .nav2{
+        margin-right: 1em;
+        margin-bottom: 1em;
+    }
+
+
+    /*---------------*/
+
+    .section1{
+        width: 100%;
+        background: aliceblue;
+        margin-top: 1em;
+    }
+
+    .section1  h1{
+        font-size: 4vw;
+        text-align: center;
+        box-shadow: 1px 1px 15px 15px lightskyblue;
+        background-color: whitesmoke;
+    }
+
+    .article1{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .article1 > h2{
+        width: 100%;
+        margin-top: 2em;
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    .article1 > p{
+        width: 100%;
+        margin-top: 1em;
+        margin: 1em;
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    /*---------------*/
+
+    .section2{
+        width: 100%;
+        background-color: rgb(239, 239, 239);
+        border: 1px solid;
+    }
+
+    .section2 h2{
+        width: 100%;
+        text-align: center;
+        margin-top: 0.3em;
+        margin-bottom: 0.5em;
+    }
+
+    .section2 article{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .section2 p{
+        margin: 0.7em 0;
+    }
+
+    .div-foto{
+        width: 0%;
+        text-align: center;
+    }
+
+    .flecha{
+        width: 100%;
+    }
+
+    .div-centro{
+        width: 100%;
+    }
+
+    .container{
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .container .item{
+        min-width: 100%;
+        scroll-snap-align: start;
+        list-style-type: none;
+        width: 100%;
+        height: 50vw;
+        border-radius: 10px;
+    }
+
+    .container li:first-of-type{
+        background: url(/static/img/hotel.png); 
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(2){
+        background: url(/static/img/hotel1.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(3){
+        background: url(/static/img/hotel2.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(4){
+        background: url(/static/img/hotel3.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(5){
+        background: url(/static/img/hotel5.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(6){
+        background: url(/static/img/hotel6.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(7){
+        background: url(/static/img/hotel7.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(8){
+        background: url(/static/img/hotel8.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(9){
+        background: url(/static/img/hotel9.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(10){
+        background: url(/static/img/hotel10.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(11){
+        background: url(/static/img/hotel11.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(12){
+        background: url(/static/img/hotel12.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(13){
+        background: url(/static/img/hotel13.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .p{
+        color: darkred;
+        text-align: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*---------------*/
+
+    .grid{
+        width: 100%; 
+    }
+
+    .div-grid{
+        width: 100%;
+        display: grid;
+        text-align: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 33.333333333333333%);
+        grid-template-rows: repeat(10, 16,5%);
+        background: url(/static/img/fondo.png);
+        background-position: center center;
+        background-size: 194vw;
+        color: white;
+    }
+
+    .div-grid h1{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        text-align: center;
+        font-size: 6vw;
+    }
+
+    .texto1{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        margin: 2em;
+    }
+
+    .texto2{
+        grid-column: 1/4;
+        grid-row: 3/4;
+        margin: 1em;
+    }
+
+    .texto3{
+        grid-column: 1/4;
+        grid-row: 4/5;
+        margin: 1em;
+    }
+
+    .texto4{
+        grid-column: 1/4;
+        grid-row: 5/6;
+        margin: 1em;
+    }
+
+    .texto5{
+        grid-column: 1/4;
+        grid-row: 6/7;
+        margin: 1em;
+    }
+
+    .texto6{
+        grid-column: 1/4;
+        grid-row: 7/8;
+        margin: 1em;
+    }
+
+    /*---------------*/
+
+    footer{
+        background-color: rgb(17, 132, 255);
+        color: white;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer1{
+        width: 100%;
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    .footer1 > p{
+        margin: 0.5em 4em;
+    }
+
+    .footer2{
+        width: 0%;
+        text-align: center;
+    }
+
+    .gestion{
+        width: 0%;
+    }
+
+    .login{
+        width: 0%;
+    }
+
 }
 
-/*---------------*/
-
-header{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: aliceblue;
-}
-
-.foto1{
-    width: 20%;
-    padding: 0.5rem;
-}
-
-/*---------------*/
-
-.foto2{
-    width: 100%;
-}
-
-.foto_header{
-    background-color: aliceblue;
-}
-
-/*---------------*/
-
-.foto3{
-    width: 25%;
-} 
-
-nav{
-    background-color: aliceblue;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.url{
-    text-decoration: none;
-    color: black;
-}
-
-input:checked  ~ .ul1{
-    display: block;
-}
-
-input {
-    display: none;
-}
-
-label {
-    display: block;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    text-align: center;
-    background-color: white;
-    margin-bottom: 1em;
-}
-
-.ul1{
-    margin-top:0;
-    padding: 0;
-    display: none;
-    position: absolute;
-}
-
-.li_menu{
-    display: block;
-    background: rgb(239, 239, 239);
-    padding: 1rem;
-    list-style: none;
-    border-bottom: 1px solid grey;
-    border-right: 1px solid grey;
-}
-
-.li_menu1{
-    display: block;
-    background: rgb(239, 239, 239);
-    padding: 1rem;
-    list-style: none;
-    border-bottom: 1px solid grey;
-    border-right: 1px solid grey;
-    margin-bottom: 2em;
-}
-
-/*Estilo cuando el mouse pasa encima de cada link del menu*/
-.li_menu:hover {
-    filter: brightness(110%);
-}
-
-.li2:hover {
-    filter: brightness(110%);
-}
-
-.li2{
-    display: inline;
-    margin: 50px 10px;
-}
-
-.boton{
-    margin-left: 1em;
-}
-
-.nav2{
-    margin-right: 1em;
-}
-
-/*---------------*/
-
-.section1{
-    width: 100%;
-    background: aliceblue;
-}
-
-.section1  h1{
-    font-size: 2vw;
-    text-align: center;
-    box-shadow: 1px 1px 15px 15px lightskyblue;
-    background-color: whitesmoke;
-}
-
-.article1{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  
-}
-
-.article1 > h2{
-    width: 50%;
-    margin-top: 2em;
-    text-align: center;
-    font-size: 1.8vw;
-}
-
-.article1 > p{
-    width: 45%;
-    margin-top: 2.5em;
-    margin-right: 5%;
-    margin-bottom: 2em;
-    font-size: 1.2vw;
-}
-
-/*---------------*/
-
-.section2{
-    width: 100%;
-    background-color: rgb(239, 239, 239);
-    border: 1px solid;
-}
-
-.section2 h2{
-    width: 100%;
-    text-align: center;
-}
-
-.section2 article{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.div-foto{
-    width: 10%;
-    text-align: center;
-}
-
-.flecha{
-    width: 100%;
-}
-
-.div-centro{
-    width: 80%;
-}
-
-.container{
-	display: flex;
-	overflow: auto;
-	scroll-snap-type: x mandatory;
-    margin: 0 auto;
-    width: 50%;
-}
-
-.container .item{
-    min-width: 100%;
-	scroll-snap-align: start;
-    list-style-type: none;
-    width: 100%;
-    height: 30vw;
-    border-radius: 10px;
-}
-
-.container li:first-of-type{
-    background: url(/static/img/hotel.png); 
-    background-size: cover;
-    background-position: center center;
-}
-
-.container li:nth-child(2){
-    background: url(/static/img/hotel1.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-.container li:nth-child(3){
-    background: url(/static/img/hotel2.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-.container li:nth-child(4){
-    background: url(/static/img/hotel3.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-.container li:nth-child(5){
-    background: url(/static/img/hotel5.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-.container li:nth-child(6){
-    background: url(/static/img/hotel6.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-.container li:nth-child(7){
-    background: url(/static/img/hotel7.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-.container li:nth-child(8){
-    background: url(/static/img/hotel8.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-.container li:nth-child(9){
-    background: url(/static/img/hotel9.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-.container li:nth-child(10){
-    background: url(/static/img/hotel10.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-.container li:nth-child(11){
-    background: url(/static/img/hotel11.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-.container li:nth-child(12){
-    background: url(/static/img/hotel12.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-.container li:nth-child(13){
-    background: url(/static/img/hotel13.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-.p{
-    color: darkred;
-    text-align: center;
-    width: 100%;
-    text-align: center;
-}
-
-/*---------------*/
-
-.grid{
-    width: 100%;
-    
-}
-
-.div-grid{
-    width: 100%;
-    display: grid;
-    text-align: center;
-    align-items: center;
-    grid-template-columns: repeat(3, 33.333333333333333%);
-    grid-template-rows: repeat(3, 33.333333333333333%);
-    background: url(/static/img/fondo.png);
-    background-position: center center;
-    color: white;
-}
-
-.div-grid h1{
-    grid-column: 1/4;
-    grid-row: 1/2;
-    text-align: center;
-
-}
-
-.texto1{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin: 2em;
-}
-
-.texto2{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin: 2em;
-}
-
-.texto3{
-    grid-column: 3/4;
-    grid-row: 2/3;
-    margin: 2em;
-}
-
-.texto4{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    margin: 2em;
-}
-
-.texto5{
-    grid-column: 2/3;
-    grid-row: 3/4;
-    margin: 2em;
-}
-
-.texto6{
-    grid-column: 3/4;
-    grid-row: 3/4;
-    margin: 2em;
-}
-
-/*---------------*/
-
-footer{
-    background-color: rgb(17, 132, 255);
-    color: white;
-    height: 50px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer1{
-    width:60%;
-    text-align: center;
-}
-
-.footer2{
-    width: 40%;
-    text-align: center;
-}
-
-.gestion{
-    width: 7%;
-}
-
-.login{
-    width: 13%;
+
+/*-------------------------------------------------------------------------------------*/
+
+
+@media(min-width: 1024px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*---------------*/
+
+    body{
+        font-size: 1.2vw;
+    }
+
+    /*---------------*/
+
+    header{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: aliceblue;
+    }
+
+    .foto1{
+        width: 20%;
+        padding: 0.5rem;
+    }
+
+    /*---------------*/
+
+    .foto2{
+        width: 100%;
+    }
+
+    .foto_header{
+        background-color: aliceblue;
+    }
+
+    /*---------------*/
+
+    nav{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .url{
+        text-decoration: none;
+        color: black;
+    }
+
+    input:checked  ~ .ul1{
+        display: block;
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        display: block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        background-color: white;
+        margin-bottom: 1em;
+    }
+
+    .ul1{
+        margin-top:0;
+        padding: 0;
+        display: none;
+        position: absolute;
+    }
+
+    .li_menu{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+    }
+
+    .li_menu1{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+        margin-bottom: 2em;
+    }
+
+    /*Estilo cuando el mouse pasa encima de cada link del menu*/
+    .li_menu:hover {
+        filter: brightness(110%);
+    }
+
+    .li2:hover {
+        filter: brightness(110%);
+    }
+
+    .li2{
+        display: inline;
+        margin: 50px 10px;
+        font-size: 2vw;
+    }
+
+    .boton{
+        margin-left: 1em;
+    }
+
+    .nav2{
+        margin-right: 1em;
+    }
+
+    /*---------------*/
+
+    .section1{
+        width: 100%;
+        background: aliceblue;
+    }
+
+    .section1  h1{
+        font-size: 2.5vw;
+        text-align: center;
+        box-shadow: 1px 1px 15px 15px lightskyblue;
+        background-color: whitesmoke;
+    }
+
+    .article1{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .article1 > h2{
+        width: 45%;
+        margin-top: 2em;
+        margin-right: 2em;
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    .article1 > p{
+        width: 45%;
+        margin-top: 2.5em;
+        margin-bottom: 2em;
+        text-align: justify;
+        font-size: 1.8vw;
+    }
+
+    /*---------------*/
+
+    .section2{
+        width: 100%;
+        background-color: rgb(239, 239, 239);
+        border: 1px solid;
+    }
+
+    .section2 h2{
+        width: 100%;
+        text-align: center;
+        margin-top: 0.3em;
+        font-size: 2.2vw;
+    }
+
+    .section2 article{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .section2 p{
+        margin: 0.7em 0;
+    }
+
+    .div-foto{
+        width: 10%;
+        text-align: center;
+    }
+
+    .flecha{
+        width: 100%;
+    }
+
+    .div-centro{
+        width: 80%;
+    }
+
+    .container{
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .container .item{
+        min-width: 100%;
+        scroll-snap-align: start;
+        list-style-type: none;
+        width: 100%;
+        height: 30vw;
+        border-radius: 10px;
+    }
+
+    .container li:first-of-type{
+        background: url(/static/img/hotel.png); 
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(2){
+        background: url(/static/img/hotel1.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(3){
+        background: url(/static/img/hotel2.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(4){
+        background: url(/static/img/hotel3.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(5){
+        background: url(/static/img/hotel5.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(6){
+        background: url(/static/img/hotel6.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(7){
+        background: url(/static/img/hotel7.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(8){
+        background: url(/static/img/hotel8.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(9){
+        background: url(/static/img/hotel9.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(10){
+        background: url(/static/img/hotel10.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(11){
+        background: url(/static/img/hotel11.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(12){
+        background: url(/static/img/hotel12.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .container li:nth-child(13){
+        background: url(/static/img/hotel13.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .p{
+        color: darkred;
+        text-align: center;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5vw;
+    }
+
+    /*---------------*/
+
+    .grid{
+        width: 100%; 
+    }
+
+    .div-grid{
+        width: 100%;
+        display: grid;
+        text-align: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 33.333333333333333%);
+        grid-template-rows: repeat(3, 33.333333333333333%);
+        background: url(/static/img/fondo.png);
+        background-position: center center;
+        background-size: 100%;
+        color: white;
+    }
+
+    .div-grid h1{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    .texto1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 2em;
+        margin-top: 0.5em;
+        font-size: 2vw;
+    }
+
+    .texto2{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: 2em;
+        margin-top: 0.5em;
+        font-size: 2vw;
+    }
+
+    .texto3{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        margin: 2em;
+        font-size: 2vw;
+    }
+
+    .texto4{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 2em;
+        margin-top: 0.5em;
+        font-size: 2vw;
+    }
+
+    .texto5{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin: 2em;
+        margin-top: 0.5em;
+        font-size: 2vw;
+    }
+
+    .texto6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        margin: 2em;
+        margin-top: 0.5em;
+        font-size: 2vw;
+    }
+
+    /*---------------*/
+
+    footer{
+        background-color: rgb(17, 132, 255);
+        color: white;
+        height: 110px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer1{
+        width:70%;
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    .footer2{
+        width: 30%;
+        text-align: center;
+    }
+
+    .gestion{
+        width: 15%;
+    }
 }
