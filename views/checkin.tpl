@@ -23,43 +23,43 @@
             <tr>
                 <td class="td">
                     <label for="DNI">DNI<span>*</span></label><br>
-                    <input type="text" name="DNI" id="DNI" required>
+                    <input type="text" name="dni" id="dni" required>
                 </td>
             
                 <td class="td">
                     <label for="Nombre">Nombre<span>*</span></label><br>
-                    <input type="text" name="Nombre" id="Nombre" required>
+                    <input type="text" name="nombre" id="nombre" required>
                 </td>
             </tr>
 
             <tr>
                 <td class="td">
                     <label for="Primer apellido">Primer apellido<span>*</span></label><br>
-                    <input type="text" name="Primer apellido" id="Primer apellido" required>
+                    <input type="text" name="apellido1" id="apellido1" required>
                 </td>
 
                 <td class="td">
                     <label for="Segundo apellido">Segundo apellido<span>*</span></label><br>
-                    <input type="text" name="Segundo apellido" id="Segundo apellido" required>
+                    <input type="text" name="apellido2" id="apellido2" required>
                 </td>
             </tr>
 
             <tr>
                 <td class="td"> 
-                    <label for="Nacionalidad">Nacionalidad<span>*</span></label><br>
-                    <select name="Nacionalidad" id="Nacionalidad" required>
+                    <label for="nacionalidad">Nacionalidad<span>*</span></label><br>
+                    <select name="nacionalidad" id="nacionalidad" required>
                         <option value select="selected">Seleccionar</option>
-                        <option value="Nacionalidad1">España</option>
-                        <option value="Nacionalidad2">Francia</option>
-                        <option value="Nacionalidad3">Alemania</option>
-                        <option value="Nacionalidad4">Inglaterra</option>
-                        <option value="Nacionalidad5">Otro</option>
+                        <option value="España">España</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Alemania">Alemania</option>
+                        <option value="Inglaterra">Inglaterra</option>
+                        <option value="Otro">Otro</option>
                     </select>
                 </td>
 
                 <td class="td">
-                    <label for="Telefono">Teléfono<span>*</span></label><br>
-                    <input type="int" name="Telefono" id="Telefono">
+                    <label for="telefono">Teléfono<span>*</span></label><br>
+                    <input type="text" name="telefono" id="telefono">
                 </td>
             </tr>
 
@@ -72,12 +72,12 @@
             <tr>
                 <td class="td">
                     <label for="fechaentrada">Fecha de entrada<span>*</span></label><br>
-                    <input type="date" id="fehcaentrada" name="fechaentrada" min="01-01-2022">
+                    <input type="date" id="fecha_entrada" name="fecha_entrada" min="01-01-2022">
                 </td>
 
                 <td class="td">
                     <label for="fechasalida">Fecha de salida<span>*</span></label><br>
-                    <input type="date" id="fehcasalida" name="fechasalida" min="01-01-2022">
+                    <input type="date" id="fecha_salida" name="fecha_salida" min="01-01-2022">
                 </td>
             </tr>
 
@@ -106,7 +106,7 @@
 
             <tr>
                 <td class="td1" colspan="2">
-                    <input type="submit" value="Reservar">
+                    <input type="submit" name="reservar" id="reservar" value="Reservar">
                 </td>
             </tr>
         </table>

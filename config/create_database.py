@@ -1,22 +1,24 @@
 import sqlite3
 
+import sqlite3
+
 def create_database(db_file):
     conn = sqlite3.connect(db_file)
 
     #Creamos las tablas
-    conn.execute("create table if not exists cliente (dni varchar(9) primary key, nombre varchar(10), apellido1 varchar(15), apellido2 varchar(15), nacionalidad varchar(10), telefono int)")
+    conn.execute("create table if not exists cliente (dni varchar(9) primary key, nombre varchar(10), apellido1 varchar(15), apellido2 varchar(15), nacionalidad varchar(10), telefono varchar(20))")
 
     conn.execute("create table if not exists habitaciones (numero_habitacion int primary key, tipo_habitacion varchar(10), numero_camas int, planta int, precio_habitacion int)")
 
     conn.execute("create table if not exists recepcionista (id_recepcionista int primary key, nombre varchar(10), apellido1 varchar(15), apellido2 varchar(15))")
 
-    conn.execute("create table if not exists reservas (id_reserva int primary key, fecha_entrada date, fecha_salida date)")
+    conn.execute("create table if not exists reservas (id_reserva int auto_increment primary key, fecha_entrada date, fecha_salida date)")
 
     conn.execute("create table if not exists servicios (id_servicio int primary key, tipo_servicio varchar(30), precio int)")
 
     conn.execute("create table if not exists recepcionista_cliente_reservas (id_recepcionista int, dni_cliente varchar(9), id_reserva int, primary key (id_recepcionista, dni_cliente, id_reserva), foreign key(id_recepcionista) references recepcionista(id_recepcionsita), foreign key(dni_cliente) references cliente(dni), foreign key(id_reserva) references reservas(id_reserva))")
 
-    conn.execute("create table if not exists reservas_habitacion( id_reserva int, numero_habitacion int, primary key( id_reserva, numero_habitacion), foreign key (id_reserva) references reservas(id_reserva), foreign key (numero_habitacion) references habitaciones(numero_habitacion))")
+    conn.execute("create table if not exists reservas_habitacion(id_reserva , numero_habitacion int, primary key( id_reserva, numero_habitacion), foreign key (id_reserva) references reservas(id_reserva), foreign key (numero_habitacion) references habitaciones(numero_habitacion))")
 
     conn.execute("create table if not exists reservas_servicios(id_reserva int, id_servicio int, primary key (id_reserva, id_servicio), foreign key (id_reserva) references reservas(id_reserva), foreign key (id_servicio) references servicios(id_servicio))")
 

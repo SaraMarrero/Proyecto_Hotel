@@ -4,6 +4,7 @@ from config.config import *
 from forms.reserva import *
 from models.formularios import *
 
+
 @get('/datos')
 def datos_list():
     conn = sqlite3.connect(DATABASE)
@@ -31,34 +32,16 @@ def new_item_save():
         apellido2 = request.POST.apellido2.strip()
         nacionalidad = request.POST.nacionalidad.strip()
         telefono = request.POST.telefono.strip()
+        id_reserva = request.POST.id_reserva.strip()
         fecha_entrada = request.POST.fecha_entrada.strip()
         fecha_salida = request.POST.fecha_salida.strip()
 
-        Reservas._insert_cliente(dni,nombre,apellido1,apellido2,nacionalidad,telefono)
-        Reservas._insert_reserva(fecha_entrada, fecha_salida)
+        #Reservas.
+        reservas = Reservas(DATABASE)
+        reservas._insert_cliente(dni,nombre,apellido1,apellido2,nacionalidad,telefono)
+        reservas._insert_reserva(id_reserva,fecha_entrada, fecha_salida)
 
         return redirect('/index')
-
-#------
-
-# @get('/edit/<no:int>')
-# def edit_item(no):
-#     conn = sqlite3.connect('datos.db')
-#     c = conn.cursor()
-#     c.execute("Select dni from cliente where dni=?", (no, ))
-#     cur_data = c.fetchone()
-#     return template('edit_cliente', old=cur_data, no=no)
-
-
-# @post('/edit/<no:int>')
-# def edit_item(no):
-
-#     conn = sqlite3.connect(DATABASE)
-#     c = conn.cursor()
-#     c.execute("UPDATE cliente SET dni = ?, nombre = ? , apellido1 = ?, apellido2 = ?, nacionalidad = ?, telefono = ? WHERE dni LIKE '?'", ("",no))
-#     conn.commit()
-
-#     return redirect('/todo')
 
 #------
 
@@ -75,6 +58,7 @@ def html(index):
 def checkin():
     # if request.POST.reserva:
     return template('checkin')
+
 
 #------
 

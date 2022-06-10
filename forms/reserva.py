@@ -3,9 +3,8 @@ from wtforms import Form, StringField, SubmitField, SelectField, validators, Dat
 class ReservaForm(Form):
 
     dni = StringField('dni', 
-                            [validators. Length (min=4, max=25)], 
-                            default='dni',
-                            renderkw={'class':'myclass'}
+                            [validators.Length(min=4, max=25)], 
+                            default='dni'
                         )
 
     nombre = StringField('nombre',
@@ -23,16 +22,14 @@ class ReservaForm(Form):
                             validators.Length(min=6,max=60), 
                         ])
 
-    telefono = IntegerField('telefono', validators.InputRequired())
+    telefono = StringField('telefono', validators.InputRequired())
 
+    nacionalidad = SelectField('nacionalidad', choices=[('España'), ('Francia'), ('Alemania'), ('Inglaterra'), ('Otros')])
 
-    nacionalidad = SelectField('nacionalidad', choices=[ ('España'), ('Francia'), ('Alemania'), ('Inglaterra'), ('Otro')])
-
+    id_reserva = IntegerField('id_reserva')
 
     fecha_entrada = DateField('fecha_entrada', validators.InputRequired())
 
-
     fecha_salida = DateField('fecha_salida', validators.InputRequired())
 
-
-    reservar = SubmitField ('Reserva cliente')
+    reservar = SubmitField('Reserva cliente')
