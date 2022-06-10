@@ -12,7 +12,7 @@
         <h1>Premium Hotel</h1>
     </section>
 
-    <form action="/new" method ="post">
+    <form action="/checkin" method="post">
         <table>
             <tr>
                 <td colspan="2">

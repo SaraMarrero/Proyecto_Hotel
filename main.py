@@ -16,13 +16,13 @@ def datos_list():
 
 #------
 
-@get('/new')
+@get('/checkin')
 def new_item_form():
     form = ReservaForm(request.POST)
     return template('checkin', form=form)
 
 
-@post('/new')
+@post('/checkin')
 def new_item_save():
     if request.POST.reservar:
         dni = request.post.dni.strip()
@@ -37,8 +37,7 @@ def new_item_save():
         Reservas._insert_cliente(dni,nombre,apellido1,apellido2,nacionalidad,telefono)
         Reservas._insert_reserva(fecha_entrada, fecha_salida)
 
-
-        return redirect('/datos')
+        return redirect('/index')
 
 #------
 
@@ -65,17 +64,17 @@ def new_item_save():
 
 @get('/index')
 def index():
-    return static_file('index.html', root="static")
-
-@post('/index')
-def enlace():
-    if request.POST.reserva:
-        return('/checkin')
+    return static_file('index.html', root='static')
 
 
 @get("/static/<index:path>")
 def html(index):
     return static_file(index, root = "static")
+
+@get('/checkin')
+def checkin():
+    # if request.POST.reserva:
+    return template('checkin')
 
 #------
 
