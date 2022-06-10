@@ -25,14 +25,14 @@ def new_item_form():
 @post('/checkin')
 def new_item_save():
     if request.POST.reservar:
-        dni = request.post.dni.strip()
-        nombre = request.post.nombre.strip()
-        apellido1 = request.post.apellido1.strip()
-        apellido2 = request.post.apellido2.strip()
-        nacionalidad = request.post.nacionalidad.strip()
-        telefono = request.post.telefono.strip()
-        fecha_entrada = request.post.fecha_entrada.strip()
-        fecha_salida = request.post.fecha_salida.strip()
+        dni = request.POST.dni.strip()
+        nombre = request.POST.nombre.strip()
+        apellido1 = request.POST.apellido1.strip()
+        apellido2 = request.POST.apellido2.strip()
+        nacionalidad = request.POST.nacionalidad.strip()
+        telefono = request.POST.telefono.strip()
+        fecha_entrada = request.POST.fecha_entrada.strip()
+        fecha_salida = request.POST.fecha_salida.strip()
 
         Reservas._insert_cliente(dni,nombre,apellido1,apellido2,nacionalidad,telefono)
         Reservas._insert_reserva(fecha_entrada, fecha_salida)

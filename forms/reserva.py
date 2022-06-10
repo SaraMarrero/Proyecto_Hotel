@@ -1,4 +1,4 @@
-from wtforms import Form, StringField, SubmitField, TextAreaField, SelectField, validators, DateField
+from wtforms import Form, StringField, SubmitField, SelectField, validators, DateField, IntegerField
 
 class ReservaForm(Form):
 
@@ -23,7 +23,7 @@ class ReservaForm(Form):
                             validators.Length(min=6,max=60), 
                         ])
 
-    telefono = ('telefono', validators.InputRequired())
+    telefono = IntegerField('telefono', validators.InputRequired())
 
 
     nacionalidad = SelectField('nacionalidad', choices=[ ('España'), ('Francia'), ('Alemania'), ('Inglaterra'), ('Otro')])
