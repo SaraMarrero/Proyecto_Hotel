@@ -109,7 +109,7 @@
     .li2{
         display: inline;
         margin: 50px 10px;
-        font-size: 6vw;
+        font-size: 110%;
     }
 
     .boton{
@@ -228,7 +228,6 @@
     footer{
         background-color: rgb(17, 132, 255);
         color: white;
-        height: 100%;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -239,7 +238,7 @@
     .footer1{
         width: 65%;
         padding-bottom: 1.5rem;
-        font-size: 5.1vw;
+        font-size: 100%;
     }
 
     .footer2{
@@ -248,7 +247,7 @@
     }
 
     .gestion{
-        width: 35%;
+        width: 30%;
     }
 
 
@@ -776,7 +775,7 @@
     .li2{
         display: inline;
         margin: 50px 10px;
-        font-size: 3.5vw;
+        font-size: 130%;
     }
 
     .boton{
@@ -1449,7 +1448,7 @@
     .li2{
         display: inline;
         margin: 50px 10px;
-        font-size: 2.5vw;
+        font-size: 170%;
     }
 
     .boton{
@@ -1582,7 +1581,7 @@
     }
 
     .footer1 > p{
-        font-size: 2vw;
+        font-size: 40%;
         margin-bottom: 2em;
     }
 
