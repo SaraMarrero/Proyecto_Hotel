@@ -1577,11 +1577,10 @@
     .footer1{
         width: 60%;
         padding: 0%;
-
     }
 
     .footer1 > p{
-        font-size: 40%;
+        font-size: 120%;
         margin-bottom: 2em;
     }
 
