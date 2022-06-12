@@ -1,4 +1,4 @@
-from wtforms import Form, StringField, SubmitField, SelectField, validators, DateField, IntegerField
+from wtforms import Form, StringField, SubmitField, SelectField, validators, DateField, IntegerField, TextAreaField
 
 class ReservaForm(Form):
 
@@ -31,5 +31,10 @@ class ReservaForm(Form):
     fecha_entrada = DateField('fecha_entrada', validators.InputRequired())
 
     fecha_salida = DateField('fecha_salida', validators.InputRequired())
+
+    datos_interes = TextAreaField('datos_interes',
+                                    [validators.InputRequired(),
+                                    validators.length(max=100)
+                                ])
 
     reservar = SubmitField('Reserva cliente')

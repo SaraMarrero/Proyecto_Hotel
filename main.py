@@ -13,7 +13,7 @@ from forms.login import *
 def datos_list():
     conn = sqlite3.connect(DATABASE)
     c = conn.cursor()
-    c.execute("select * from reservas")
+    c.execute("select * from cliente")
     result = c.fetchall()
     c.close()
     output = template('make_table', rows=result)
