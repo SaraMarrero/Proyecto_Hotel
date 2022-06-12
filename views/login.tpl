@@ -27,56 +27,47 @@
         <table>
             <tr>
                 <td>
-                    {{ form.id.label }}
-                    <!-- <label for="id">ID<span>*</span></label> -->
+                    <label for="id">ID<span>*</span></label>
                 </td>
                    
                 <td>
-                    {{ form.id }}
-                    <!-- <input type="text" name="id" id="id" required> -->
+                    <input type="text" name="id" id="id" required>
                 </td>
             </tr>
             
             <tr>
                 <td>
-                    {{ form.nombre.label}}
-                    <!-- <label for="Nombre">Nombre<span>*</span></label> -->
+                    <label for="Nombre">Nombre<span>*</span></label>
                 </td>
                    
                 <td>
-                    {{ form.nombre }}
-                    <!-- <input type="text" name="nombre" id="nombre" required> -->
+                    <input type="text" name="nombre" id="nombre" required>
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    {{ form.apellido1.label }}
-                    <!-- <label for="Apellido1">Apellido 1<span>*</span></label> -->
+                   <label for="Apellido1">Apellido 1<span>*</span></label>
                 </td>
                     
                 <td>
-                    {{ form.apellido1 }}
-                    <!-- <input type="text" name="apellido1" id="apellido1" required> -->
+                   <input type="text" name="apellido1" id="apellido1" required>
                 </td>
             </tr>
              
             <tr>
                 <td>
-                    {{ form.apellido2.label }}
-                    <!-- <label for="Apellido2">Apellido 2<span>*</span></label> -->
+                    <label for="Apellido2">Apellido 2<span>*</span></label>
                 </td>
                   
                 <td>
-                    {{ form.apellido2 }}
-                    <!-- <input type="text" name="apellido2" id="apellido2" required> -->
+                    <input type="text" name="apellido2" id="apellido2" required>
                 </td>
             </tr>
                 
             <tr>
                 <td colspan="2">
-                    {{ form.entrar }}
-                    <!-- <input type="submit" name="entrar" id="entrar" value="Entrar"> -->
+                    <input type="submit" name="entrar" id="entrar" value="Entrar">
                 </td>
             </tr>
         </table>
