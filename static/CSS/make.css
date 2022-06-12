@@ -25,6 +25,15 @@ table, tr td{
     padding: 0.5em;
 }
 
+button{
+    margin: 2em;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
 
 h3{
     text-align: center;

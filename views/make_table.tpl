@@ -1,7 +1,7 @@
 %#template to generate a HTML table from a list of tuples (or list of lists, or tuple of tuples or ...)
 
 % include('header.tpl')
-
+<button><a href="/index">Salir</a></button>
 <h3>PREMIUM HOTEL</h3>
 <p>Los datos de la tabla elegida son los siguientes:</p>
 
