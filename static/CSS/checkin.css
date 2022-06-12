@@ -1,36 +1,14 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-/*---------------*/
-
-header{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #f0f8ff;
-}
-
-.foto1{
-    width: 20%;
-}
-
-/*---------------*/
-
-.foto2{
-    width: 100%;
-}
-
-.foto_header{
-    background-color: aliceblue;
+    box-sizing: border-box;
 }
 
 /*---------------*/
 
 body{
     background-color: aliceblue;
+    background: url(/static/img/fondo1.png);
 }
 
 .section1{
@@ -38,46 +16,60 @@ body{
     text-align: center;
 }
 
-.foto404{
-    width: 50%;
+.section1 h1{
+    margin-bottom: 3rem;
+    box-shadow: 1px 1px 15px 15px white;
+    margin-top: 1.5rem;
 }
 
-/*---------------*/
+/*---------------*/ 
 
-.section2{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.flecha{
-    width: 30%;
+table{
+    width: 60%;
     margin: 0 auto;
+    margin-bottom: 5rem;
+    box-shadow: 1px 1px 15px 15px white;
 }
 
-.article1{
-    width: 45%;
-    margin-top: 2em;
-    text-align: right;
+table, tr td{
+    border: 1px solid;
+    border-collapse: collapse;
+    
 }
 
-.article2{
-    width: 20%;
-    margin-top: 2em; 
+h3{
     text-align: center;
+    padding: 1em;
 }
 
-.article3{
-    width: 35%;
-    margin-top: 2em;
-   
+.titulo{
+    text-align: center;
+    padding: 1em;
+    background-color: grey;
 }
 
-.article3 a{
-    text-decoration: none;
-    color: black;
+label, input, select, textarea{
+    margin-left: 1rem;
+    margin: 0.5em;
+}
+
+.td{
+    padding: 0.5em;
+    background: rgb(239, 239, 239);
+}
+
+.td1{
+    padding: 0.5em;
+    text-align: center;
+    background: rgb(239, 239, 239);
+}
+
+span{
+    color: red;
+    font-size: 1vw;
 }
 
 
+textarea{
+    resize: none;
+}
