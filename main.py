@@ -1,9 +1,12 @@
 import sqlite3
 from bottle import *
 from config.config import *
-from forms.reserva import *
+
 from models.formularios import *
+
+from forms.reserva import *
 from forms.login import *
+
 
 
 @get('/datos')
@@ -47,21 +50,19 @@ def new_item_save():
 #-----
 
 @get('/login')
-def loginform():
+def view_login():
     form = LoginForm(request.POST)
     return template('login', form=form)
 
 @post('/login')
 def login():
     form = LoginForm(request.POST)
-    if form.Enviar.data and form.validate():
+    if form.entrar.data and form.validate():
         form_data = {
-            'Id_recepcionsita': form.Id_recepcionista.data,
-            'Nombre': form.Nombre.data,
-            'Apellido1': form.Apellido1.data,
-            'Apellido2': form.Apellido2.data,
-            'Contraseña': form.Contraseña.data,
-            'Confirmar_contraseña': form.Confirmar_contraseña.data,
+            'id': form.id.data,
+            'nombre': form.nombre.data,
+            'apellido1': form.apellido1.data,
+            'apellido2': form.apellido2.data
         }
         print(form_data)
         redirect('/datos')
