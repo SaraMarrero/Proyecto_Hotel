@@ -109,7 +109,7 @@
     .li2{
         display: inline;
         margin: 50px 10px;
-        font-size: 6vw;
+        font-size: 110%;
     }
 
     .li2 a{
@@ -233,7 +233,6 @@
     footer{
         background-color: rgb(17, 132, 255);
         color: white;
-        height: 100%;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -244,7 +243,7 @@
     .footer1{
         width: 65%;
         padding-bottom: 1.5rem;
-        font-size: 5.1vw;
+        font-size: 100%;
     }
 
     .footer2{
@@ -253,7 +252,7 @@
     }
 
     .gestion{
-        width: 35%;
+        width: 30%;
     }
 
 
@@ -781,7 +780,7 @@
     .li2{
         display: inline;
         margin: 50px 10px;
-        font-size: 3.5vw;
+        font-size: 130%;
     }
 
     .li2 a{
@@ -1459,7 +1458,7 @@
     .li2{
         display: inline;
         margin: 50px 10px;
-        font-size: 2.5vw;
+        font-size: 170%;
     }
 
     .li2 a{
@@ -1593,11 +1592,10 @@
     .footer1{
         width: 60%;
         padding: 0%;
-
     }
 
     .footer1 > p{
-        font-size: 2vw;
+        font-size: 120%;
         margin-bottom: 2em;
     }
 

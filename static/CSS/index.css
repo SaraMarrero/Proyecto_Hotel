@@ -539,7 +539,7 @@
     .li2{
         display: inline;
         margin: 50px 10px;
-        font-size: 3vw;
+        font-size: 130%;
     }
 
     .li2 a{
@@ -970,7 +970,7 @@
     .li2{
         display: inline;
         margin: 50px 10px;
-        font-size: 2vw;
+        font-size: 150%;
     }
 
     .li2 a{
