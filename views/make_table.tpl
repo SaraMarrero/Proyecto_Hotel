@@ -3,7 +3,7 @@
 % include('header.tpl')
 
 <h3>PREMIUM HOTEL</h3>
-<p>Las clientes de hotel son los siguientes:</p>
+<p>Los datos de la tabla elegida son los siguientes:</p>
 
 <table border="1">
     %for row in rows:

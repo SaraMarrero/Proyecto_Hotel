@@ -23,3 +23,11 @@ class Reservas():
         conn.commit()
         c.close()
         return True
+    
+    def _login_admin(self, id_reserva, fecha_entrada, fecha_salida):
+        conn = self.__conectar()
+        c = conn.cursor()
+        c.execute()
+        conn.commit()
+        c.close()
+        return True

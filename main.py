@@ -3,6 +3,7 @@ from bottle import *
 from config.config import *
 from forms.reserva import *
 from models.formularios import *
+from forms.login import *
 
 
 @get('/datos')
@@ -43,6 +44,30 @@ def new_item_save():
 
         return redirect('/index')
 
+#-----
+
+@get('/login')
+def loginform():
+    form = LoginForm(request.POST)
+    return template('login', form=form)
+
+@post('/login')
+def login():
+    form = LoginForm(request.POST)
+    if form.Enviar.data and form.validate():
+        form_data = {
+            'Id_recepcionsita': form.Id_recepcionista.data,
+            'Nombre': form.Nombre.data,
+            'Apellido1': form.Apellido1.data,
+            'Apellido2': form.Apellido2.data,
+            'Contraseña': form.Contraseña.data,
+            'Confirmar_contraseña': form.Confirmar_contraseña.data,
+        }
+        print(form_data)
+        redirect('/datos')
+    print(form.errors)
+    return template('login', form=form)
+
 #------
 
 @get('/index')
@@ -58,7 +83,6 @@ def html(index):
 def checkin():
     # if request.POST.reserva:
     return template('checkin')
-
 
 #------
 
