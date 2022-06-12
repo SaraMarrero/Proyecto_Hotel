@@ -1,7 +1,5 @@
 import sqlite3
 
-import sqlite3
-
 def create_database(db_file):
     conn = sqlite3.connect(db_file)
 
