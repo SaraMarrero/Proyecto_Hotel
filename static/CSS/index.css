@@ -111,6 +111,11 @@
         margin: 50px 10px;
     }
 
+    .li2 a{
+        text-decoration: none;
+        color: black;
+    }
+
     .boton{
         margin-left: 1em;
     }
@@ -537,6 +542,11 @@
         font-size: 3vw;
     }
 
+    .li2 a{
+        text-decoration: none;
+        color: black;
+    }
+
     .boton{
         margin-left: 1em;
         margin-top: 0.8em;
@@ -961,6 +971,11 @@
         display: inline;
         margin: 50px 10px;
         font-size: 2vw;
+    }
+
+    .li2 a{
+        text-decoration: none;
+        color: black;
     }
 
     .boton{
