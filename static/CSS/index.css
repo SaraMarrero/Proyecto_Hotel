@@ -1,379 +1,1288 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/*---------------*/
-
-header{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.foto1{
-    width: 20%;
-    padding: 0.5rem;
-}
-
-/*---------------*/
-
-.foto2{
-    width: 100%;
-}
-
-/*---------------*/
-
-.foto3{
-    width: 25%;
-} 
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-.navbar{
-    display: flex;
-    flex-wrap: wrap; 
-    align-items: center; 
-    justify-content: space-between; 
-    padding-block: 15px; 
-}
-
-.navbar a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.logo{
-    margin-right: 50px;
-}
-
-.list{
-    list-style: none;
-    display: flex;
-    gap: 25px; 
-    margin-right: 0%;
-}
-
-#toggler,
-.navbar label{
-    display: none;
-}
-
-@media screen and (max-width: 576px){
-    .menu{
-        width: 100%;
-        max-height: 0; 
-        overflow: hidden; 
+/*Para Móvil*/
+@media (min-width: 320px) {
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
-    .list{
-        flex-direction: column; 
+
+/*---------------*/
+
+    header{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: aliceblue;
+    }
+
+    .foto1{
+        width: 50%;
+        padding: 0.5rem;
+    }
+
+/*---------------*/
+
+    .foto2{
+        width: 100%;
+    }
+
+    .foto_header{
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+    }
+
+/*---------------*/
+
+    nav{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
-        padding: 20px;
+    }
+
+
+    .url{
+        text-decoration: none;
         color: black;
     }
-    .navbar label{
-        display: inline-flex; 
+
+    input:checked  ~ .ul1{
+        display: block;
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        display: block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 27px;
+        line-height: 25px;
+        font-weight: bold;
+        text-align: center;
+        background-color: white;
+        margin-bottom: 0.5em;
+    }
+
+    .ul1{
+        margin-top: 0;
+        padding: 0;
+        display: none;
+        position: absolute;
+    }
+
+    .li_menu{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+    }
+
+    .li_menu1{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+        margin-bottom: 2em;
+    }
+
+    /*Estilo cuando el mouse pasa encima de cada link del menu*/
+    .li_menu:hover {
+        filter: brightness(110%);
+    }
+
+    .li2:hover {
+        filter: brightness(110%);
+    }
+
+    .li2{
+        display: inline;
+        margin: 50px 10px;
+    }
+
+    .li2 a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .boton{
+        margin-left: 1em;
+    }
+
+    .nav2{
+        margin-right: 0.5em;
+        font-size: 1em;
+        margin-bottom: 0.1em;
+    }
+
+/*---------------*/
+
+    .slider{
+        width: 100%;
+        height: 10rem;
+        overflow: hidden;
+    }
+
+    .slider ul{
+        display: flex;
+        animation: cambio 20s infinite alternate linear;
+        width: 400%;
+        height: 100%;
+    }
+
+    .slider li{
+        width: 100%;
+        list-style: none;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .slider li:first-of-type{
+        background: url(/static/img/exterior.jpeg); 
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .slider li:nth-child(2){
+        background: url(/static/img/piscina1.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .slider li:nth-child(3){
+        background: url(/static/img/piscina.png);
+        background-size: cover;
+        background-position: center 35%;
+    }
+
+    .slider li:nth-child(4){
+        background: url(/static/img/vistas.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    @keyframes cambio{
+        0%{margin-left: 0;}
+        20%{margin-left: 0;}
+
+        25%{margin-left: -100%;}
+        45%{margin-left: -100%;}
+
+        50%{margin-left: -200%;}
+        70%{margin-left: -200%;}
+
+        75%{margin-left: -300%;}
+        100%{margin-left: -300%;}
+    }
+
+/*---------------*/
+
+    .section-flechas{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .flechas{
+        width: 7%;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+/*---------------*/
+
+    .section2{
+        background-color: aliceblue;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section2 h2{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1.5em;
+        box-shadow: 1px 1px 15px 15px lightskyblue;
+        background-color: whitesmoke;
+    }
+
+    .section2 p{
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+/*---------------*/
+
+    .section3{
+        background-color: rgb(239, 239, 239);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
+        border: 1px solid;
     }
+
+    .h1{
+        padding: 0.5rem
+    }
+
+    .a{
+        color: blue;
+        margin-bottom: 1em;
+    }
+
+    .div1{
+        text-align: center;
+        width: 40%;
+        margin-bottom: 3%;
+    }
+
+    .div2{
+        width: 80%;
+        text-align: center;
+    }
+
+    .certificados{
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    span{
+        color: rgb(227, 24, 227);
+    }
+
+    .premios{
+        list-style-type: none;
+        padding: 0.5rem;
+    }
+
+    .contenido{
+        background-color:rgb(214, 220, 228);
+        width:30%;
+        padding: 10px 20px;
+        margin: 20% auto;
+        position: relative;
+    }
+
+    .subventana1{
+        background-color: rgba(0,0,0,.8);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity:0;
+        pointer-events: none;
+        transition: all 1s;
+    }
+
+    #subventana:target{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+/*---------------*/
+
+    .section4{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img{
+        width: 30%;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+
+/*---------------*/
+
+    .section5{
+        background-color: rgb(239, 239, 239);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border: 1px solid;
+    }
+
+    .article1{
+        width: 100%;
+        margin-top: 0.5em;
+    }
+
+    .article1 > h1{
+        padding: 0.5rem;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .article1 > .p{
+        color: grey;
+        width: 60%; 
+        margin: 0 auto;
+    }
+
+    .article1 > a > button{
+        background-color: lightblue;
+        width: 30%;
+        height: 10%;
+        position: relative;
+        left: 35%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .article2{
+        width: 100%; 
+        margin-bottom: 1em;
+        margin: 0.5em 1.5em;
+    }
+
+    .img-piscina{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+/*---------------*/
+
+    .section7{
+        background-color: aliceblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .section7 > table{
+        width: 100%;
+        margin-left: 3%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        background-color: rgb(239, 239, 239);
+    }
+
+
+    iframe{
+        width: 100%;
+        margin-right: 1%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+/*---------------*/
+
+    footer{
+        background-color: rgb(17, 132, 255);
+        color: white;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer1{
+        width: 100%;
+        text-align: center;
+        margin-top: 1%;
+    }
+    /*57%*/
+    .footer2{
+        width: 0%;
+        text-align: center;
+    }
+    /*40%*/
+    .gestion{
+        width: 0%;
+    }
+    /*30%*/
+
+    .login{
+        width: 0%;
+    }
+    /*58%*/
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+/*Para Tablets*/
+@media(min-width: 768px) {
     
-    #toggler:checked ~ .menu{
-        max-height: 100%;
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
-}
 
 /*---------------*/
 
-.slider{
-    width: 100%;
-    height: 30rem;
-    overflow: hidden;
-}
+    header{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: aliceblue;
+    }
 
-.slider ul{
-    display: flex;
-    animation: cambio 20s infinite alternate linear;
-    width: 400%;
-    height: 100%;
-}
-
-.slider li{
-    width: 100%;
-    list-style: none;
-    height: 100%;
-    background-repeat: no-repeat;
-}
-
-.slider li:first-of-type{
-    background: url(/static/img/exterior.jpeg); 
-    background-size: cover;
-    background-position: center center;
-}
-
-.slider li:nth-child(2){
-    background: url(/static/img/piscina1.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-.slider li:nth-child(3){
-    background: url(/static/img/piscina.png);
-    background-size: cover;
-    background-position: center 35%;
-}
-
-.slider li:nth-child(4){
-    background: url(/static/img/vistas.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-@keyframes cambio{
-    0%{margin-left: 0;}
-    20%{margin-left: 0;}
-
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
-}
+    .foto1{
+        width: 30%;
+        padding: 0.5rem;
+    }
 
 /*---------------*/
 
-.section-flechas{
-    background-color: aliceblue;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+    .foto2{
+        width: 100%;
+    }
 
-.flechas{
-    width: 7%;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
+    .foto_header{
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+    }
 
 /*---------------*/
 
-.section2{
-    background-color: aliceblue;
-    width: 100%;
-    text-align: center;
-}
+    nav{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-.section2 h2{
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1.5em;
-    box-shadow: 1px 1px 15px 15px lightskyblue;
-    background-color: whitesmoke;
-}
+    .url{
+        text-decoration: none;
+        color: black;
+    }
 
-.section2 p{
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-}
+    input:checked  ~ .ul1{
+        display: block;
+    }
 
-/*---------------*/
+    input {
+        display: none;
+    }
 
-.section3{
-    background-color: rgb(239, 239, 239);
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
+    label {
+        display: block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        background-color: white;
+        margin-bottom: 1em;
+    }
 
-.h1{
-    padding: 0.5rem
-}
+    .ul1{
+        margin-top:0;
+        padding: 0;
+        display: none;
+        position: absolute;
+    }
 
-.a{
-    color: blue;
-    margin-bottom: 1em;
-}
+    .li_menu{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+    }
 
-.div1{
-    text-align: center;
-    width: 40%;
-    margin-left: 10%;
-}
+    .li_menu1{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+        margin-bottom: 2em;
+    }
 
-.div2{
-    width: 40%;
-    text-align: center;
-    margin-right: 10%;
-}
+    /*Estilo cuando el mouse pasa encima de cada link del menu*/
+    .li_menu:hover {
+        filter: brightness(110%);
+    }
 
-.certificados{
-    width: 50%;
-    padding: 0.5rem;
-}
+    .li2:hover {
+        filter: brightness(110%);
+    }
 
-span{
-    color: rgb(227, 24, 227);
-}
+    .li2{
+        display: inline;
+        margin: 50px 10px;
+        font-size: 130%;
+    }
 
-.premios{
-    list-style-type: none;
-    padding: 0.5rem;
-}
+    .li2 a{
+        text-decoration: none;
+        color: black;
+    }
 
-.contenido{
-    background-color:rgb(214, 220, 228);
-    width:30%;
-    padding: 10px 20px;
-    margin: 20% auto;
-    position: relative;
-}
+    .boton{
+        margin-left: 1em;
+        margin-top: 0.8em;
+    }
 
-.subventana1{
-    background-color: rgba(0,0,0,.8);
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity:0;
-    pointer-events: none;
-    transition: all 1s;
-}
-
-#subventana:target{
-    opacity: 1;
-    pointer-events: auto;
-  }
+    .nav2{
+        margin-right: 1em;
+    }
 
 /*---------------*/
 
-.section4{
-    background-color: aliceblue;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    .slider{
+        width: 100%;
+        height: 30rem;
+        overflow: hidden;
+    }
 
-.img{
-    width: 10%;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
+    .slider ul{
+        display: flex;
+        animation: cambio 20s infinite alternate linear;
+        width: 400%;
+        height: 100%;
+    }
 
-/*---------------*/
+    .slider li{
+        width: 100%;
+        list-style: none;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
 
-.section5{
-    background-color: rgb(239, 239, 239);
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
+    .slider li:first-of-type{
+        background: url(/static/img/exterior.jpeg); 
+        background-size: cover;
+        background-position: center center;
+    }
 
-.article1{
-    width: 50%;
-    margin-top: 2em;
-}
+    .slider li:nth-child(2){
+        background: url(/static/img/piscina1.png);
+        background-size: cover;
+        background-position: center center;
+    }
 
-.article1 > h1{
-    padding: 0.5rem;
-    width: 60%;
-    text-align: center;
-    margin: 0 auto;
-}
+    .slider li:nth-child(3){
+        background: url(/static/img/piscina.png);
+        background-size: cover;
+        background-position: center 35%;
+    }
 
-.article1 > .p{
-    color: grey;
-    width: 60%; 
-    margin: 0 auto;
-}
+    .slider li:nth-child(4){
+        background: url(/static/img/vistas.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
 
-.article1 > a > button{
-    background-color: lightblue;
-    width: 20%;
-    height: 10%;
-    position: relative;
-    left: 40%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
+    @keyframes cambio{
+        0%{margin-left: 0;}
+        20%{margin-left: 0;}
 
-.article2{
-    width: 50%; 
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
+        25%{margin-left: -100%;}
+        45%{margin-left: -100%;}
 
-.img-piscina{
-    width: 70%;
-    border-radius: 10px;
-}
+        50%{margin-left: -200%;}
+        70%{margin-left: -200%;}
+
+        75%{margin-left: -300%;}
+        100%{margin-left: -300%;}
+    }
 
 /*---------------*/
 
-.section7{
-    background-color: aliceblue;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-}
+    .section-flechas{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 
-.section7 > table{
-    width: 40%;
-    margin-left: 10%;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    background-color: rgb(239, 239, 239);
-}
-
-
-iframe{
-    width: 40%;
-    margin-right: 10%;
-    margin-top: 3em;
-    margin-bottom: 3em;
-}
+    .flechas{
+        width: 7%;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
 
 /*---------------*/
 
-footer{
-    background-color: rgb(17, 132, 255);
-    color: white;
-    height: 50px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    .section2{
+        background-color: aliceblue;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section2 h2{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1.5em;
+        box-shadow: 1px 1px 15px 15px lightskyblue;
+        background-color: whitesmoke;
+    }
+
+    .section2 p{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+/*---------------*/
+
+    .section3{
+        background-color: rgb(239, 239, 239);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+    }
+
+    .h1{
+        padding: 0.5rem
+    }
+
+    .a{
+        color: blue;
+        margin-bottom: 1em;
+    }
+
+    .div1{
+        text-align: center;
+        width: 40%;
+        margin-left: 10%;
+    }
+
+    .div2{
+        width: 40%;
+        text-align: center;
+        margin-right: 10%;
+    }
+
+    .certificados{
+        width: 80%;
+        padding: 0.5rem;
+    }
+
+    span{
+        color: rgb(227, 24, 227);
+    }
+
+    .premios{
+        list-style-type: none;
+        padding: 0.5rem;
+    }
+
+    .contenido{
+        background-color:rgb(214, 220, 228);
+        width:30%;
+        position: relative;
+    }
+
+    .subventana1{
+        background-color: rgba(0,0,0,.8);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity:0;
+        pointer-events: none;
+        transition: all 1s;
+    }
+
+    #subventana:target{
+        opacity: 1;
+        width: 70rem;
+        pointer-events: auto;
+    }
+
+/*---------------*/
+
+    .section4{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img{
+        width: 16%;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+/*---------------*/
+
+    .section5{
+        background-color: rgb(239, 239, 239);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border: 1px solid;
+    }
+
+    .article1{
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    .article1 > h1{
+        padding: 0.5rem;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .article1 > .p{
+        color: grey;
+        width: 60%; 
+        margin: 0 auto;
+    }
+
+    .article1 > a > button{
+        background-color: lightblue;
+        width: 20%;
+        height: 10%;
+        position: relative;
+        left: 40%;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+
+    .article2{
+        width: 100%; 
+        margin-top: 1em;
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-piscina{
+        width: 50%;
+        border-radius: 10px;
+    }
+
+/*---------------*/
+
+    .section7{
+        background-color: aliceblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .section7 > table{
+        width: 40%;
+        margin-left: 10%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        background-color: rgb(239, 239, 239);
+    }
+
+
+    iframe{
+        width: 40%;
+        margin-right: 10%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+/*---------------*/
+
+    footer{
+        background-color: rgb(17, 132, 255);
+        color: white;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer1{
+        width:100%;
+        text-align: center;
+    }
+
+    .footer1 > p {
+        font-size: 23px;
+    }
+
+    .footer2{
+        width: 0%;
+        text-align: center;
+    }
+
+    .gestion{
+        width: 0%;
+    }
+
+    .login{
+        width: 0%;
+    }
+
 }
 
-.footer1{
-    width:60%;
-    text-align: center;
 
-}
+/*-------------------------------------------------------------*/
 
-.footer2{
-    width: 40%;
-    text-align: center;
-}
 
-.gestion{
-    width: 7%;
-}
+@media(min-width: 1024px) {
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-.login{
-    width: 13%;
+/*---------------*/
+
+    header{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: aliceblue;
+    }
+
+    .foto1{
+        width: 20%;
+        padding: 0.5rem;
+    }
+
+/*---------------*/
+
+    .foto2{
+        width: 100%;
+    }
+
+    .foto_header{
+        background-color: aliceblue;
+    }
+
+/*---------------*/
+
+    nav{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .url{
+        text-decoration: none;
+        color: black;
+    }
+
+    input:checked  ~ .ul1{
+        display: block;
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        display: block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        background-color: white;
+        margin-bottom: 1em;
+    }
+
+    .ul1{
+        margin-top:0;
+        padding: 0;
+        display: none;
+        position: absolute;
+    }
+
+    .li_menu{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+    }
+
+    .li_menu1{
+        display: block;
+        background: rgb(239, 239, 239);
+        padding: 1rem;
+        list-style: none;
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+        margin-bottom: 2em;
+    }
+
+    /*Estilo cuando el mouse pasa encima de cada link del menu*/
+    .li_menu:hover {
+        filter: brightness(110%);
+    }
+
+    .li2:hover {
+        filter: brightness(110%);
+    }
+
+    .li2{
+        display: inline;
+        margin: 50px 10px;
+        font-size: 150%;
+    }
+
+    .li2 a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .boton{
+        margin-left: 1em;
+    }
+
+    .nav2{
+        margin-right: 1em;
+    }
+
+/*---------------*/
+
+    .slider{
+        width: 100%;
+        height: 30rem;
+        overflow: hidden;
+    }
+
+    .slider ul{
+        display: flex;
+        animation: cambio 20s infinite alternate linear;
+        width: 400%;
+        height: 100%;
+    }
+
+    .slider li{
+        width: 100%;
+        list-style: none;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .slider li:first-of-type{
+        background: url(/static/img/exterior.jpeg); 
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .slider li:nth-child(2){
+        background: url(/static/img/piscina1.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .slider li:nth-child(3){
+        background: url(/static/img/piscina.png);
+        background-size: cover;
+        background-position: center 35%;
+    }
+
+    .slider li:nth-child(4){
+        background: url(/static/img/vistas.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    @keyframes cambio{
+        0%{margin-left: 0;}
+        20%{margin-left: 0;}
+
+        25%{margin-left: -100%;}
+        45%{margin-left: -100%;}
+
+        50%{margin-left: -200%;}
+        70%{margin-left: -200%;}
+
+        75%{margin-left: -300%;}
+        100%{margin-left: -300%;}
+    }
+
+/*---------------*/
+
+    .section-flechas{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .flechas{
+        width: 7%;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+/*---------------*/
+
+    .section2{
+        background-color: aliceblue;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section2 h2{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1.5em;
+        box-shadow: 1px 1px 15px 15px lightskyblue;
+        background-color: whitesmoke;
+    }
+
+    .section2 p{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+/*---------------*/
+
+    .section3{
+        background-color: rgb(239, 239, 239);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+    }
+
+    .h1{
+        padding: 0.5rem
+    }
+
+    .a{
+        color: blue;
+        margin-bottom: 1em;
+    }
+
+    .div1{
+        text-align: center;
+        width: 40%;
+        margin-left: 10%;
+    }
+
+    .div2{
+        width: 40%;
+        text-align: center;
+        margin-right: 10%;
+    }
+
+    .certificados{
+        width: 50%;
+        padding: 0.5rem;
+    }
+
+    span{
+        color: rgb(227, 24, 227);
+    }
+
+    .premios{
+        list-style-type: none;
+        padding: 0.5rem;
+    }
+
+    .contenido{
+        background-color:rgb(214, 220, 228);
+        width:30%;
+        padding: 10px 20px;
+        margin: 20% auto;
+        position: relative;
+    }
+
+    .subventana1{
+        background-color: rgba(0,0,0,.8);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity:0;
+        pointer-events: none;
+        transition: all 1s;
+    }
+
+    #subventana:target{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+/*---------------*/
+
+    .section4{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img{
+        width: 10%;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+/*---------------*/
+
+    .section5{
+        background-color: rgb(239, 239, 239);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border: 1px solid;
+    }
+
+    .article1{
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    .article1 > h1{
+        padding: 0.5rem;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .article1 > .p{
+        color: grey;
+        width: 60%; 
+        margin: 0 auto;
+    }
+
+    .article1 > a > button{
+        background-color: lightblue;
+        width: 20%;
+        height: 10%;
+        position: relative;
+        left: 40%;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+
+    .article2{
+        width: 100%; 
+        margin-top: 1em;
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-piscina{
+        width: 30%;
+        border-radius: 10px;
+    }
+
+/*---------------*/
+
+    .section7{
+        background-color: aliceblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .section7 > table{
+        width: 40%;
+        margin-left: 10%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        background-color: rgb(239, 239, 239);
+    }
+
+
+    iframe{
+        width: 40%;
+        margin-right: 10%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+/*---------------*/
+
+    footer{
+        background-color: rgb(17, 132, 255);
+        color: white;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer1{
+        width:60%;
+        text-align: center;
+
+    }
+
+    .footer2{
+        width: 40%;
+        text-align: center;
+    }
+
+    .gestion{
+        width: 7%;
+    }
+
+    .login{
+        width: 13%;
+    }
 }
